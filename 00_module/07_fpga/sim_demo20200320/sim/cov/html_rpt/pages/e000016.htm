@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <!-- original name: _work.ARBITA_CH6ContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">ModelSim</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000016.htm">work.ARBITA_CH6</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="missing"><a name="cvg25065"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_18.htm#274" z="    assign  s_CH0_ACK                   = s_FSM_CHK &amp; ( CH0_REQ..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="s_FSM_CHK" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH0_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="s_FSM_CHK_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="s_FSM_CHK_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="CH0_REQ_0" h1="202" t="e" c1="{ 10 }"/>
+  <tr n="4" z="CH0_REQ_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg25067"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_18.htm#275" z="    assign  s_CH1_ACK                   = s_FSM_CHK &amp; (~CH0_REQ..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="CH0_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_FSM_CHK" c="g" r="" i=""/>
+  <tr z="CH1_REQ" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="CH0_REQ_0" h1="150" t="e" c1="{ 011 }"/>
+  <tr n="2" z="CH0_REQ_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="s_FSM_CHK_0" h1="150" t="e" c1="{ 001 }"/>
+  <tr n="4" z="s_FSM_CHK_1" h1="150" t="e" c1="{ 011 }"/>
+  <tr n="5" z="CH1_REQ_0" h1="202" t="e" c1="{ 010 }"/>
+  <tr n="6" z="CH1_REQ_1" h1="150" t="e" c1="{ 011 }"/>
+  </table>
+</div><div><a name="cvg25069"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_18.htm#276" z="    assign  s_CH2_ACK                   = s_FSM_CHK &amp; (~CH0_REQ..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="CH0_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="CH1_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_FSM_CHK" c="g" r="" i=""/>
+  <tr z="CH2_REQ" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="CH0_REQ_0" h1="20" t="e" c1="{ 0011 }"/>
+  <tr n="2" z="CH0_REQ_1" h1="0" t="e" c1="{ 1011 }"/>
+  <tr n="3" z="CH1_REQ_0" h1="20" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="CH1_REQ_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="s_FSM_CHK_0" h1="20" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="s_FSM_CHK_1" h1="20" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="CH2_REQ_0" h1="202" t="e" c1="{ 0010 }"/>
+  <tr n="8" z="CH2_REQ_1" h1="20" t="e" c1="{ 0011 }"/>
+  </table>
+</div><div><a name="cvg25071"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_18.htm#277" z="    assign  s_CH3_ACK                   = s_FSM_CHK &amp; (~CH0_REQ..." c="R" p="40.00" F="1"/>
+  <tr/>
+  <tr z="CH0_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="CH1_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="CH2_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_FSM_CHK" c="g" r="" i=""/>
+  <tr z="CH3_REQ" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="CH0_REQ_0" h1="20" t="e" c1="{ 00011 }"/>
+  <tr n="2" z="CH0_REQ_1" h1="0" t="e" c1="{ 10011 }"/>
+  <tr n="3" z="CH1_REQ_0" h1="20" t="e" c1="{ 00011 }"/>
+  <tr n="4" z="CH1_REQ_1" h1="0" t="e" c1="{ 01011 }"/>
+  <tr n="5" z="CH2_REQ_0" h1="20" t="e" c1="{ 00011 }"/>
+  <tr n="6" z="CH2_REQ_1" h1="0" t="e" c1="{ 00111 }"/>
+  <tr n="7" z="s_FSM_CHK_0" h1="20" t="e" c1="{ 00001 }"/>
+  <tr n="8" z="s_FSM_CHK_1" h1="20" t="e" c1="{ 00011 }"/>
+  <tr n="9" z="CH3_REQ_0" h1="202" t="e" c1="{ 00010 }"/>
+  <tr n="10" z="CH3_REQ_1" h1="20" t="e" c1="{ 00011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg25073"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_18.htm#278" z="    assign  s_CH4_ACK                   = s_FSM_CHK &amp; (~CH0_REQ..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="CH0_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH1_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH2_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH3_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="s_FSM_CHK" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH4_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="CH0_REQ_0" h1="0" t="e" c1="{ 000011 }"/>
+  <tr n="2" z="CH0_REQ_1" h1="0" t="e" c1="{ 100011 }"/>
+  <tr n="3" z="CH1_REQ_0" h1="0" t="e" c1="{ 000011 }"/>
+  <tr n="4" z="CH1_REQ_1" h1="0" t="e" c1="{ 010011 }"/>
+  <tr n="5" z="CH2_REQ_0" h1="0" t="e" c1="{ 000011 }"/>
+  <tr n="6" z="CH2_REQ_1" h1="0" t="e" c1="{ 001011 }"/>
+  <tr n="7" z="CH3_REQ_0" h1="0" t="e" c1="{ 000011 }"/>
+  <tr n="8" z="CH3_REQ_1" h1="0" t="e" c1="{ 000111 }"/>
+  <tr n="9" z="s_FSM_CHK_0" h1="0" t="e" c1="{ 000001 }"/>
+  <tr n="10" z="s_FSM_CHK_1" h1="0" t="e" c1="{ 000011 }"/>
+  <tr n="11" z="CH4_REQ_0" h1="202" t="e" c1="{ 000010 }"/>
+  <tr n="12" z="CH4_REQ_1" h1="0" t="e" c1="{ 000011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg25075"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_18.htm#279" z="    assign  s_CH5_ACK                   = s_FSM_CHK &amp; (~CH0_REQ..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="CH0_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH1_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH2_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH3_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH4_REQ" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="s_FSM_CHK" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="CH5_REQ" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="CH0_REQ_0" h1="0" t="e" c1="{ 0000011 }"/>
+  <tr n="2" z="CH0_REQ_1" h1="0" t="e" c1="{ 1000011 }"/>
+  <tr n="3" z="CH1_REQ_0" h1="0" t="e" c1="{ 0000011 }"/>
+  <tr n="4" z="CH1_REQ_1" h1="0" t="e" c1="{ 0100011 }"/>
+  <tr n="5" z="CH2_REQ_0" h1="0" t="e" c1="{ 0000011 }"/>
+  <tr n="6" z="CH2_REQ_1" h1="0" t="e" c1="{ 0010011 }"/>
+  <tr n="7" z="CH3_REQ_0" h1="0" t="e" c1="{ 0000011 }"/>
+  <tr n="8" z="CH3_REQ_1" h1="0" t="e" c1="{ 0001011 }"/>
+  <tr n="9" z="CH4_REQ_0" h1="0" t="e" c1="{ 0000011 }"/>
+  <tr n="10" z="CH4_REQ_1" h1="0" t="e" c1="{ 0000111 }"/>
+  <tr n="11" z="s_FSM_CHK_0" h1="0" t="e" c1="{ 0000001 }"/>
+  <tr n="12" z="s_FSM_CHK_1" h1="0" t="e" c1="{ 0000011 }"/>
+  <tr n="13" z="CH5_REQ_0" h1="202" t="e" c1="{ 0000010 }"/>
+  <tr n="14" z="CH5_REQ_1" h1="0" t="e" c1="{ 0000011 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

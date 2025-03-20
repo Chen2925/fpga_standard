@@ -1,0 +1,15 @@
+vlib work
+vmap work
+
+#================================================================
+# IPcore
+#================================================================
+
+#================================================================
+# RTL
+#================================================================
+
+vlog    -reportprogress 300 -work work      ../rtl/03_reg_bist/*.V
+vlog    -reportprogress 300 -work work      ../rtl/04_uart_if/*.V
+vlog    -reportprogress 300 -work work      ../rtl/05_bps_gen/*.V
+vlog    -reportprogress 300 -work work      ../rtl/06_pc_sim/*.V

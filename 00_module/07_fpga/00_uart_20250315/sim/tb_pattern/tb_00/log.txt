@@ -1,0 +1,25 @@
+ 
+-- ======================================================================
+--                     Simulation tb_00 start                               
+-- ======================================================================
+---- Initial simulation
+// ================================================================
+// File Name    : log.txt                                          
+// Test Pattern : tb_00                                     
+// ================================================================
+---- clock ---- 1111 ---- enable
+---- Wait for  64 cycles end
+---- Wait for  16 cycles end
+---- reset0   64 cycle end
+---- Wait for  16 cycles end
+---- reset1  255 ns end
+---- [Error      ]Read register timeout ADD :0x000
+---- [Error      ]Read register timeout ADD :0x000
+---- [Error      ]Read register   PORT :0x0    ADD :0x000    EDAT :0x00000000    RDAT :0x00000000
+---- Wait for 255 cycles end
+---- Wait for 255 cycles end
+---- tb_00 test completed !
+ 
+-- ======================================================================
+--                     Simulation tb_00 Fail End                            
+-- ======================================================================

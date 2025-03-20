@@ -1,0 +1,82 @@
+ 
+-- ======================================================================
+--                     Simulation tb_02 start                               
+-- ======================================================================
+---- Initial simulation
+// ================================================================
+// File Name    : log.txt                                          
+// Test Pattern : tb_02                                     
+// ================================================================
+---- clock ---- 1111 ---- enable
+---- Wait for  64 cycles end
+---- Wait for  64 cycles end
+---- BRAM write   PORT :0x01    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x02    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x04    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x08    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x10    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x20    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x40    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x80    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM read   PORT :0x01    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x01    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x02    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x02    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x04    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x04    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x08    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x08    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x10    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x10    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x20    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x20    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x40    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x40    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x80    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x80    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM write   PORT :0x01    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x02    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x04    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x08    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x10    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x20    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x40    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x80    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM read   PORT :0x01    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x01    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x02    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x02    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x04    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x04    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x08    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x08    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x10    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x10    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x20    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x20    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x40    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x40    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x80    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x80    ADD :0x0040    SIZE :0x100    success read end
+---- Wait for 255 cycles end
+---- tb_02 test completed !
+ 
+-- ======================================================================
+--                    Simulation tb_02 Successful End                       
+-- ======================================================================

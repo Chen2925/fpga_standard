@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <!-- original name: _tb_top_U_FPGA_TOP_SIM_U_AUR_RX_DEC_BPContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  <script type="text/javascript" src="../scripts/popup.js"></script>
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">ModelSim</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000041.htm">tb_top</a>/<a href="z003680.htm">U_FPGA_TOP_SIM</a>/<a href="z009637.htm">U_AUR_RX_DEC_BP</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg9720"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#551" z="    assign s_AUR_PL_SOP1                = r_AUR_RX_SOP_LOCK1 &amp; ..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP_LOCK1" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_LOCK1_0" k1="9720_0$009637" h1="540" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_AUR_RX_SOP_LOCK1_1" k1="9720_1$009637" h1="270" t="e" c1="{ 11 }"/>
+  <tr n="3" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="r_AUR_RX_DVLD_1" k1="9720_3$009637" h1="270" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg9722"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#552" z="    assign s_AUR_PL_SOP2                = r_AUR_RX_SOP_LOCK2 &amp; ..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP_LOCK2" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_LOCK2_0" k1="9722_0$009637" h1="540" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_AUR_RX_SOP_LOCK2_1" k1="9722_1$009637" h1="270" t="e" c1="{ 11 }"/>
+  <tr n="3" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="r_AUR_RX_DVLD_1" k1="9722_3$009637" h1="270" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9724"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#555" z="    assign s_TYPE_INI_PK                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_INI_PK)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9724_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_INI_PK)_0" k1="9724_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_INI_PK)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9726"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#556" z="    assign s_TYPE_REG_RD                = ( r_AUR_RX_SOP == 1'b..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="g" r="" i=""/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_RD)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9726_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" k1="9726_1$009637" h1="150" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_RD)_0" k1="9726_2$009637" h1="120" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_RD)_1" k1="9726_3$009637" h1="150" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9728"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#557" z="    assign s_TYPE_REG_RC                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_RC)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9728_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_RC)_0" k1="9728_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_RC)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9730"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#558" z="    assign s_TYPE_REG_WR                = ( r_AUR_RX_SOP == 1'b..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="g" r="" i=""/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_WR)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9730_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" k1="9730_1$009637" h1="40" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_WR)_0" k1="9730_2$009637" h1="230" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_REG_WR)_1" k1="9730_3$009637" h1="40" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9732"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#559" z="    assign s_TYPE_RAM_RD                = ( r_AUR_RX_SOP == 1'b..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="g" r="" i=""/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_RD)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9732_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" k1="9732_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_RD)_0" k1="9732_2$009637" h1="250" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_RD)_1" k1="9732_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9734"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#560" z="    assign s_TYPE_RAM_RC                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_RC)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9734_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_RC)_0" k1="9734_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_RC)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9736"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#561" z="    assign s_TYPE_RAM_WR                = ( r_AUR_RX_SOP == 1'b..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="g" r="" i=""/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_WR)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9736_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" k1="9736_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_WR)_0" k1="9736_2$009637" h1="250" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_RAM_WR)_1" k1="9736_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9738"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#562" z="    assign s_TYPE_DDR_RD                = ( r_AUR_RX_SOP == 1'b..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="g" r="" i=""/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_RD)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9738_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" k1="9738_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_RD)_0" k1="9738_2$009637" h1="250" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_RD)_1" k1="9738_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9740"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#563" z="    assign s_TYPE_DDR_RC                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_RC)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9740_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_RC)_0" k1="9740_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_RC)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9742"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#564" z="    assign s_TYPE_DDR_WR                = ( r_AUR_RX_SOP == 1'b..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="g" r="" i=""/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_WR)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9742_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" k1="9742_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_WR)_0" k1="9742_2$009637" h1="250" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_DDR_WR)_1" k1="9742_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9744"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#565" z="    assign s_TYPE_CFG_WR                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_CFG_WR)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9744_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_CFG_WR)_0" k1="9744_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_CFG_WR)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9746"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#566" z="    assign s_TYPE_EXD_RD                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_EXD_RD)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9746_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_EXD_RD)_0" k1="9746_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_EXD_RD)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9748"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#567" z="    assign s_TYPE_EXD_WR                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_EXD_WR)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9748_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_EXD_WR)_0" k1="9748_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_EXD_WR)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9750"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#568" z="    assign s_TYPE_CMD_RX                = ( r_AUR_RX_SOP == 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_SOP" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(r_AUR_RX_DATA[7:0] == p_TYPE_CMD_RX)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_SOP_0" k1="9750_0$009637" h1="3338" t="e" c1="{ 0- }"/>
+  <tr n="2" z="r_AUR_RX_SOP_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(r_AUR_RX_DATA[7:0] == p_TYPE_CMD_RX)_0" k1="9750_2$009637" h1="270" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(r_AUR_RX_DATA[7:0] == p_TYPE_CMD_RX)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9752"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#635" z="            r_INI_RX_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_IN..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_INI_PK_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="4" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="5" z="r_INI_PK_SEL_0" k1="9752_4$009637" h1="3330" t="e" c1="{ 010 }"/>
+  <tr n="6" z="r_INI_PK_SEL_1" h1="0" t="e" c1="{ 011 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9754"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#673" z="            r_REG_RD_REQ                &lt;= r_REG_RD_SEL &amp; s_AUR..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_REG_RD_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP1" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_REG_RD_SEL_0" k1="9754_0$009637" h1="120" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_REG_RD_SEL_1" k1="9754_1$009637" h1="150" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP1_0" k1="9754_2$009637" h1="300" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP1_1" k1="9754_3$009637" h1="150" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9756"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#721" z="            r_REG_RC_ACK                &lt;= r_REG_RC_SEL &amp; s_AUR..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_REG_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_REG_RC_SEL_0" k1="9756_0$009637" h1="270" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_REG_RC_SEL_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9758"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#769" z="            r_REG_WR_REQ                &lt;= r_REG_WR_SEL &amp; s_AUR..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_REG_WR_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP2" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_REG_WR_SEL_0" k1="9758_0$009637" h1="230" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_REG_WR_SEL_1" k1="9758_1$009637" h1="40" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" k1="9758_2$009637" h1="80" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" k1="9758_3$009637" h1="40" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9760"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#811" z="            r_RAM_RD_REQ                &lt;= r_RAM_RD_SEL &amp; s_AUR..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_RAM_RD_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP1" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_RAM_RD_SEL_0" k1="9760_0$009637" h1="250" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_RAM_RD_SEL_1" k1="9760_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP1_0" k1="9760_2$009637" h1="40" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP1_1" k1="9760_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9762"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#861" z="            r_RAM_RC_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_RA..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="s_AUR_PL_SOP1" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_RAM_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="s_AUR_PL_SOP1_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="2" z="s_AUR_PL_SOP1_1" h1="0" t="e" c1="{ 1011 }"/>
+  <tr n="3" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="r_RAM_RC_SEL_0" k1="9762_6$009637" h1="3060" t="e" c1="{ 0010 }"/>
+  <tr n="8" z="r_RAM_RC_SEL_1" h1="0" t="e" c1="{ 0011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9764"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#869" z="            r_RAM_RC_ACK                &lt;= r_RAM_RC_SEL &amp; s_AUR..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_RAM_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_RAM_RC_SEL_0" k1="9764_0$009637" h1="270" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_RAM_RC_SEL_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9766"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#878" z="            r_RAM_RC_SOP                &lt;= r_AUR_RX_DVLD &amp; r_RA..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_RAM_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_RAM_RC_SEL_0" k1="9766_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_RAM_RC_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9768"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#879" z="            r_RAM_RC_EOP                &lt;= r_AUR_RX_DVLD &amp; r_RA..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_RAM_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_RAM_RC_SEL_0" k1="9768_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_RAM_RC_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg9770"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#929" z="            r_RAM_WR_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_RA..." c="Y" p="75.00" F="1"/>
+  <tr/>
+  <tr z="s_AUR_PL_SOP1" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_EOP" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="r_RAM_WR_SEL" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="s_AUR_PL_SOP1_0" k1="9770_0$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  <tr n="2" z="s_AUR_PL_SOP1_1" k1="9770_1$009637" h1="20" t="e" c1="{ 1011 }"/>
+  <tr n="3" z="r_AUR_RX_EOP_0" k1="9770_2$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="r_AUR_RX_EOP_1" k1="9770_3$009637" h1="20" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="r_AUR_RX_DVLD_1" k1="9770_5$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="r_RAM_WR_SEL_0" k1="9770_6$009637" h1="1780" t="e" c1="{ 0010 }"/>
+  <tr n="8" z="r_RAM_WR_SEL_1" k1="9770_7$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9772"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#937" z="            r_RAM_WR_REQ                &lt;= r_RAM_WR_SEL &amp; s_AUR..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_RAM_WR_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP2" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_RAM_WR_SEL_0" k1="9772_0$009637" h1="250" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_RAM_WR_SEL_1" k1="9772_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" k1="9772_2$009637" h1="1300" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" k1="9772_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg9774"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#946" z="            r_RAM_WR_SOP                &lt;= r_AUR_RX_DVLD &amp; r_RA..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="r_RAM_WR_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP2" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" k1="9774_1$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_RAM_WR_SEL_0" k1="9774_2$009637" h1="250" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_RAM_WR_SEL_1" k1="9774_3$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="5" z="s_AUR_PL_SOP2_0" k1="9774_4$009637" h1="1300" t="e" c1="{ 110 }"/>
+  <tr n="6" z="s_AUR_PL_SOP2_1" k1="9774_5$009637" h1="20" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg9776"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#947" z="            r_RAM_WR_EOP                &lt;= r_AUR_RX_DVLD &amp; r_RA..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="r_RAM_WR_SEL" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_EOP" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" k1="9776_1$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_RAM_WR_SEL_0" k1="9776_2$009637" h1="250" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_RAM_WR_SEL_1" k1="9776_3$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="5" z="r_AUR_RX_EOP_0" k1="9776_4$009637" h1="1300" t="e" c1="{ 110 }"/>
+  <tr n="6" z="r_AUR_RX_EOP_1" k1="9776_5$009637" h1="20" t="e" c1="{ 111 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9778"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#987" z="            r_DDR_RD_REQ                &lt;= r_DDR_RD_SEL &amp; s_AUR..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_DDR_RD_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP1" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_DDR_RD_SEL_0" k1="9778_0$009637" h1="250" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_DDR_RD_SEL_1" k1="9778_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP1_0" k1="9778_2$009637" h1="40" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP1_1" k1="9778_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9780"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1035" z="            r_DDR_RC_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_DD..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="s_AUR_PL_SOP1" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_DDR_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="s_AUR_PL_SOP1_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="2" z="s_AUR_PL_SOP1_1" h1="0" t="e" c1="{ 1011 }"/>
+  <tr n="3" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="r_DDR_RC_SEL_0" k1="9780_6$009637" h1="3060" t="e" c1="{ 0010 }"/>
+  <tr n="8" z="r_DDR_RC_SEL_1" h1="0" t="e" c1="{ 0011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9782"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1043" z="            r_DDR_RC_ACK                &lt;= r_DDR_RC_SEL &amp; s_AUR..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_DDR_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_DDR_RC_SEL_0" k1="9782_0$009637" h1="270" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_DDR_RC_SEL_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9784"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1052" z="            r_DDR_RC_SOP                &lt;= r_AUR_RX_DVLD &amp; r_DD..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_DDR_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_DDR_RC_SEL_0" k1="9784_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_DDR_RC_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9786"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1053" z="            r_DDR_RC_EOP                &lt;= r_AUR_RX_DVLD &amp; r_DD..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_DDR_RC_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_DDR_RC_SEL_0" k1="9786_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_DDR_RC_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg9788"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1101" z="            r_DDR_WR_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_DD..." c="Y" p="75.00" F="1"/>
+  <tr/>
+  <tr z="s_AUR_PL_SOP1" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_EOP" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="r_DDR_WR_SEL" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="s_AUR_PL_SOP1_0" k1="9788_0$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  <tr n="2" z="s_AUR_PL_SOP1_1" k1="9788_1$009637" h1="20" t="e" c1="{ 1011 }"/>
+  <tr n="3" z="r_AUR_RX_EOP_0" k1="9788_2$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="r_AUR_RX_EOP_1" k1="9788_3$009637" h1="20" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="r_AUR_RX_DVLD_1" k1="9788_5$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="r_DDR_WR_SEL_0" k1="9788_6$009637" h1="1780" t="e" c1="{ 0010 }"/>
+  <tr n="8" z="r_DDR_WR_SEL_1" k1="9788_7$009637" h1="1280" t="e" c1="{ 0011 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9790"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1109" z="            r_DDR_WR_REQ                &lt;= r_DDR_WR_SEL &amp; s_AUR..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="r_DDR_WR_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP2" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_DDR_WR_SEL_0" k1="9790_0$009637" h1="250" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_DDR_WR_SEL_1" k1="9790_1$009637" h1="20" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" k1="9790_2$009637" h1="1300" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" k1="9790_3$009637" h1="20" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg9792"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1118" z="            r_DDR_WR_SOP                &lt;= r_AUR_RX_DVLD &amp; r_DD..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="r_DDR_WR_SEL" c="g" r="" i=""/>
+  <tr z="s_AUR_PL_SOP2" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" k1="9792_1$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_DDR_WR_SEL_0" k1="9792_2$009637" h1="250" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_DDR_WR_SEL_1" k1="9792_3$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="5" z="s_AUR_PL_SOP2_0" k1="9792_4$009637" h1="1300" t="e" c1="{ 110 }"/>
+  <tr n="6" z="s_AUR_PL_SOP2_1" k1="9792_5$009637" h1="20" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg9794"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1119" z="            r_DDR_WR_EOP                &lt;= r_AUR_RX_DVLD &amp; r_DD..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="r_DDR_WR_SEL" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_EOP" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" k1="9794_1$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_DDR_WR_SEL_0" k1="9794_2$009637" h1="250" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_DDR_WR_SEL_1" k1="9794_3$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="5" z="r_AUR_RX_EOP_0" k1="9794_4$009637" h1="1300" t="e" c1="{ 110 }"/>
+  <tr n="6" z="r_AUR_RX_EOP_1" k1="9794_5$009637" h1="20" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg9796"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1155" z="            r_CMD_RX_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_DD..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_EOP" c="g" r="" i=""/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="r_DDR_WR_SEL" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_EOP_0" k1="9796_0$009637" h1="1300" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_EOP_1" k1="9796_1$009637" h1="20" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="4" z="r_AUR_RX_DVLD_1" k1="9796_3$009637" h1="1300" t="e" c1="{ 011 }"/>
+  <tr n="5" z="r_DDR_WR_SEL_0" k1="9796_4$009637" h1="2030" t="e" c1="{ 010 }"/>
+  <tr n="6" z="r_DDR_WR_SEL_1" k1="9796_5$009637" h1="1300" t="e" c1="{ 011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9798"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1163" z="            r_CMD_RX_SOP                &lt;= r_CMD_RX_SEL &amp; s_AUR..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_CMD_RX_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP1" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_CMD_RX_SEL_0" k1="9798_0$009637" h1="270" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_CMD_RX_SEL_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP1_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP1_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9800"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1171" z="            r_CMD_RX_EOP                &lt;= r_AUR_RX_DVLD &amp; r_CM..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_CMD_RX_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_CMD_RX_SEL_0" k1="9800_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_CMD_RX_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9802"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1219" z="            r_CFG_WR_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_CF..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="s_AUR_PL_SOP1" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_CFG_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="s_AUR_PL_SOP1_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="2" z="s_AUR_PL_SOP1_1" h1="0" t="e" c1="{ 1011 }"/>
+  <tr n="3" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="r_CFG_WR_SEL_0" k1="9802_6$009637" h1="3060" t="e" c1="{ 0010 }"/>
+  <tr n="8" z="r_CFG_WR_SEL_1" h1="0" t="e" c1="{ 0011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9804"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1227" z="            r_CFG_WR_REQ                &lt;= r_CFG_WR_SEL &amp; s_AUR..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_CFG_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_CFG_WR_SEL_0" k1="9804_0$009637" h1="270" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_CFG_WR_SEL_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9806"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1236" z="            r_CFG_WR_SOP                &lt;= r_AUR_RX_DVLD &amp; r_CF..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_CFG_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_CFG_WR_SEL_0" k1="9806_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_CFG_WR_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9808"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1237" z="            r_CFG_WR_EOP                &lt;= r_AUR_RX_DVLD &amp; r_CF..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_CFG_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_CFG_WR_SEL_0" k1="9808_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_CFG_WR_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9810"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1279" z="            r_EXD_RD_REQ                &lt;= r_EXD_RD_SEL &amp; s_AUR..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_EXD_RD_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP1" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_EXD_RD_SEL_0" k1="9810_0$009637" h1="270" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_EXD_RD_SEL_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP1_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP1_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9812"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1329" z="            r_EXD_WR_DVLD               &lt;= r_AUR_RX_DVLD &amp; r_EX..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="s_AUR_PL_SOP1" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_EXD_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="s_AUR_PL_SOP1_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="2" z="s_AUR_PL_SOP1_1" h1="0" t="e" c1="{ 1011 }"/>
+  <tr n="3" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="r_EXD_WR_SEL_0" k1="9812_6$009637" h1="3060" t="e" c1="{ 0010 }"/>
+  <tr n="8" z="r_EXD_WR_SEL_1" h1="0" t="e" c1="{ 0011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9814"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1337" z="            r_EXD_WR_REQ                &lt;= r_EXD_WR_SEL &amp; s_AUR..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_EXD_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_EXD_WR_SEL_0" k1="9814_0$009637" h1="270" t="e" c1="{ 01 }"/>
+  <tr n="2" z="r_EXD_WR_SEL_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9816"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1346" z="            r_EXD_WR_SOP                &lt;= r_AUR_RX_DVLD &amp; r_EX..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_EXD_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="s_AUR_PL_SOP2" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_EXD_WR_SEL_0" k1="9816_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_EXD_WR_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="s_AUR_PL_SOP2_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="s_AUR_PL_SOP2_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg9818"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_1.htm#1347" z="            r_EXD_WR_EOP                &lt;= r_AUR_RX_DVLD &amp; r_EX..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="r_AUR_RX_DVLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="r_EXD_WR_SEL" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="r_AUR_RX_EOP" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="r_AUR_RX_DVLD_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="r_AUR_RX_DVLD_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="r_EXD_WR_SEL_0" k1="9818_2$009637" h1="270" t="e" c1="{ 101 }"/>
+  <tr n="4" z="r_EXD_WR_SEL_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="r_AUR_RX_EOP_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="r_AUR_RX_EOP_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

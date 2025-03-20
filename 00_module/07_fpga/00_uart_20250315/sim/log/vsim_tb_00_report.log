@@ -1,0 +1,42 @@
+# vsim -t 1ps -c -l ./log/vsim_tb_00_report.log work.tb_top -L UNISIMS_VER -L SECUREIP -L SIMPRIMS_VER -L work -voptargs="+acc" work.glbl -wav ./wave/tb_00.wlf 
+# Start time: 22:40:42 on Mar 19,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_top(fast)
+# Loading work.SIM_MODEL(fast)
+# Loading work.PC_SIM(fast)
+# Loading work.HEX2ASCII(fast)
+# Loading work.ASCII2HEX(fast)
+# Loading work.UART_IF(fast)
+# Loading work.RX_BUF(fast)
+# Loading work.RX_DEC(fast)
+# Loading work.TX_PAK(fast)
+# Loading work.REG_BIST(fast)
+# Loading work.glbl(fast)
+#  
+# ******<<<<<<<<<<<<<<<<<<<<<<Simulation tb_00 start>>>>>>>>>>>>>>>>>>>>>>> ******
+#  
+# ---- Initial simulation
+# ---- clock ---- 1111 ---- enable
+# ---- Wait for  64 cycles
+# ---- Wait for  64 cycles end
+# ---- Wait for  16 cycles
+# ---- Wait for  16 cycles end
+# ---- reseting by cycle
+# ---- reset0   64 cycle end
+# ---- Wait for  16 cycles
+# ---- Wait for  16 cycles end
+# ---- reseting by ns
+# ---- reset1  255 ns end
+# ---- [Error      ]Read register timeout ADD :0x000
+# ---- [Error      ]Read register timeout ADD :0x000
+# ---- [Error      ]Read register   PORT :0x0    ADD :0x000    EDAT :0x00000000    RDAT :0x00000000
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- tb_00 test completed !
+#  
+# ******<<<<<<<<<<<<<<<<<<<<<<Simulation tb_00 Fail End>>>>>>>>>>>>>>>>>>>>>>> ******
+#  
+# End time: 22:46:10 on Mar 19,2025, Elapsed time: 0:05:28
+# Errors: 0, Warnings: 0

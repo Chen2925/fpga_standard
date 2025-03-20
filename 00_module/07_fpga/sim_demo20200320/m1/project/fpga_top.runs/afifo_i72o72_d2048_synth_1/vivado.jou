@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Feb  6 15:56:17 2025
+# Process ID: 6284
+# Current directory: G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/afifo_i72o72_d2048_synth_1
+# Command line: vivado.exe -log afifo_i72o72_d2048.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source afifo_i72o72_d2048.tcl
+# Log file: G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/afifo_i72o72_d2048_synth_1/afifo_i72o72_d2048.vds
+# Journal file: G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/afifo_i72o72_d2048_synth_1\vivado.jou
+#-----------------------------------------------------------
+source afifo_i72o72_d2048.tcl -notrace

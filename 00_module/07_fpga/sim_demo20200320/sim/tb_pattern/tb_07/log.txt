@@ -1,0 +1,763 @@
+ 
+-- ======================================================================
+--                     Simulation tb_07 start                               
+-- ======================================================================
+---- Initial simulation
+// ================================================================
+// File Name    : log.txt                                          
+// Test Pattern : tb_07                                     
+// ================================================================
+---- clock ---- 1111 ---- enable
+---- Wait for  64 cycles end
+---- Wait for  64 cycles end
+---- reset0   64 cycle end
+---- Wait for  64 cycles end
+---- reset1  255 ns end
+---- Wait for  64 cycles end
+---- Wait           1 us of   8 us
+---- Wait           2 us of   8 us
+---- Wait           3 us of   8 us
+---- Wait           4 us of   8 us
+---- Wait           5 us of   8 us
+---- Wait           6 us of   8 us
+---- Wait           7 us of   8 us
+---- Wait           8 us of   8 us
+---- reset2    8 us end
+---- Wait for  64 cycles end
+---- push switch ---- 11111110 ----
+---- Wait for  64 cycles end
+---- push switch ---- 11111101 ----
+---- Wait for  64 cycles end
+---- push switch ---- 11111011 ----
+---- Wait for  64 cycles end
+---- push switch ---- 11110111 ----
+---- Wait for  64 cycles end
+---- push switch ---- 11101111 ----
+---- Wait for  64 cycles end
+---- push switch ---- 11011111 ----
+---- Wait for  64 cycles end
+---- push switch ---- 10111111 ----
+---- Wait for  64 cycles end
+---- push switch ---- 01111111 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 00000001 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 00000011 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 00000111 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 00001111 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 00011111 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 00111111 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 01111111 ----
+---- Wait for  64 cycles end
+---- dip switch ---- 11111111 ----
+---- Wait for  64 cycles end
+---- [Success  ]Read register   PORT :0x0    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x0    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x0    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x0    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x0    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x1    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x1    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x1    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x1    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x1    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x2    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x2    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x2    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x2    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x2    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x3    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x3    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x3    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x3    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x3    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x4    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x4    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x4    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x4    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x4    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x5    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x5    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x5    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x5    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x5    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x6    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x6    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x6    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x6    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x6    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x7    ADD :0x000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x7    ADD :0x001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x7    ADD :0x002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x7    ADD :0x003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x7    ADD :0x004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x005    EDAT :0xffffffff    RDAT :0xffffffff
+---- Wait for  64 cycles end
+---- Wait for  64 cycles end
+---- [Success  ]Read register   PORT :0x0    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x027    EDAT :0x00000000    RDAT :0x00000000
+---- Wait for  64 cycles end
+---- Write register   PORT :0x0    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x0    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x0    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x0    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x0    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x0    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x0    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x0    ADD :0x027    DATA :0xffffffff
+---- Write register   PORT :0x1    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x1    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x1    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x1    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x1    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x1    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x1    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x1    ADD :0x027    DATA :0xffffffff
+---- Write register   PORT :0x2    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x2    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x2    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x2    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x2    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x2    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x2    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x2    ADD :0x027    DATA :0xffffffff
+---- Write register   PORT :0x3    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x3    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x3    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x3    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x3    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x3    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x3    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x3    ADD :0x027    DATA :0xffffffff
+---- Write register   PORT :0x4    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x4    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x4    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x4    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x4    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x4    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x4    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x4    ADD :0x027    DATA :0xffffffff
+---- Write register   PORT :0x5    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x5    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x5    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x5    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x5    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x5    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x5    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x5    ADD :0x027    DATA :0xffffffff
+---- Write register   PORT :0x6    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x6    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x6    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x6    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x6    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x6    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x6    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x6    ADD :0x027    DATA :0xffffffff
+---- Write register   PORT :0x7    ADD :0x020    DATA :0x01234567
+---- Write register   PORT :0x7    ADD :0x021    DATA :0x76543210
+---- Write register   PORT :0x7    ADD :0x022    DATA :0x89abcdef
+---- Write register   PORT :0x7    ADD :0x023    DATA :0xfedcba98
+---- Write register   PORT :0x7    ADD :0x024    DATA :0x5a5a5a5a
+---- Write register   PORT :0x7    ADD :0x025    DATA :0xa5a5a5a5
+---- Write register   PORT :0x7    ADD :0x026    DATA :0x00000000
+---- Write register   PORT :0x7    ADD :0x027    DATA :0xffffffff
+---- Wait for  64 cycles end
+---- [Success  ]Read register   PORT :0x0    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x0    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x0    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x0    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x0    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x0    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x0    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x0    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x1    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x1    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x1    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x1    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x1    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x1    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x1    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x1    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x2    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x2    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x2    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x2    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x2    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x2    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x2    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x2    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x3    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x3    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x3    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x3    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x3    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x3    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x3    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x3    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x4    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x4    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x4    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x4    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x4    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x4    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x4    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x4    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x5    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x5    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x5    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x5    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x5    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x5    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x5    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x5    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x6    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x6    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x6    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x6    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x6    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x6    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x6    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x6    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]Read register   PORT :0x7    ADD :0x020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]Read register   PORT :0x7    ADD :0x021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]Read register   PORT :0x7    ADD :0x022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]Read register   PORT :0x7    ADD :0x023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]Read register   PORT :0x7    ADD :0x024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]Read register   PORT :0x7    ADD :0x025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]Read register   PORT :0x7    ADD :0x026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]Read register   PORT :0x7    ADD :0x027    EDAT :0xffffffff    RDAT :0xffffffff
+---- BRAM write   PORT :0x01    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x02    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x04    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x08    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x10    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x20    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x40    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x80    ADD :0x0000    SIZE :0x100
+---- BRAM write end
+---- BRAM read   PORT :0x01    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x01    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x02    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x02    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x04    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x04    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x08    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x08    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x10    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x10    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x20    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x20    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x40    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x40    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM read   PORT :0x80    ADD :0x0000    SIZE :0x100
+---- [Success  ]BRAM PORT :0x80    ADD :0x0000    SIZE :0x100    success read end
+---- BRAM write   PORT :0x01    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x02    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x04    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x08    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x10    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x20    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x40    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM write   PORT :0x80    ADD :0x0040    SIZE :0x100
+---- BRAM write end
+---- BRAM read   PORT :0x01    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x01    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x02    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x02    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x04    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x04    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x08    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x08    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x10    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x10    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x20    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x20    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x40    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x40    ADD :0x0040    SIZE :0x100    success read end
+---- BRAM read   PORT :0x80    ADD :0x0040    SIZE :0x100
+---- [Success  ]BRAM PORT :0x80    ADD :0x0040    SIZE :0x100    success read end
+---- DRAM write PORT :0x01    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x02    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x04    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x08    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x10    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x20    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x40    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM read PORT :0x01    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x01    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x02    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x02    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x04    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x04    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x08    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x08    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x10    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x10    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x20    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x20    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x40    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x40    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM write PORT :0x01    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x02    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x04    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x08    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x10    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x20    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x40    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM read PORT :0x01    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x01    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x02    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x02    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x04    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x04    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x08    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x08    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x10    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x10    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x20    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x20    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x40    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x40    ADD :0x0000080    SIZE :0x200    success read end
+---- Wait for  64 cycles end
+---- [Success  ]LBUS Read register   ADD :0x0000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x0001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x0002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x0003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x0004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x0800    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x0801    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x0802    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x0803    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x0804    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0805    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x0c00    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x0c01    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x0c02    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x0c03    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x0c04    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c05    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1000    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1001    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1002    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1003    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1004    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1005    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1400    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1401    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1402    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1403    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1404    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1405    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1800    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1801    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1802    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1803    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1804    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1805    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1c00    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1c01    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1c02    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1c03    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1c04    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c05    EDAT :0xffffffff    RDAT :0xffffffff
+---- Wait for  64 cycles end
+---- Wait for  64 cycles end
+---- [Success  ]LBUS Read register   ADD :0x0020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0820    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0821    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0822    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0823    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0824    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0825    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0826    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0827    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c20    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c21    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c22    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c23    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c24    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c25    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c26    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c27    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1020    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1021    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1022    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1023    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1024    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1025    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1027    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1420    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1421    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1422    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1423    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1424    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1425    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1426    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1427    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1820    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1821    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1822    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1823    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1824    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1825    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1826    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1827    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c20    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c21    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c22    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c23    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c24    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c25    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c26    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c27    EDAT :0x00000000    RDAT :0x00000000
+---- Wait for  64 cycles end
+---- LBUS Write register   ADD :0x0020    DATA :0x01234567
+---- LBUS Write register   ADD :0x0021    DATA :0x76543210
+---- LBUS Write register   ADD :0x0022    DATA :0x89abcdef
+---- LBUS Write register   ADD :0x0023    DATA :0xfedcba98
+---- LBUS Write register   ADD :0x0024    DATA :0x5a5a5a5a
+---- LBUS Write register   ADD :0x0025    DATA :0xa5a5a5a5
+---- LBUS Write register   ADD :0x0026    DATA :0x00000000
+---- LBUS Write register   ADD :0x0027    DATA :0xffffffff
+---- LBUS Write register   ADD :0x0820    DATA :0x01234567
+---- LBUS Write register   ADD :0x0821    DATA :0x76543210
+---- LBUS Write register   ADD :0x0822    DATA :0x89abcdef
+---- LBUS Write register   ADD :0x0823    DATA :0xfedcba98
+---- LBUS Write register   ADD :0x0824    DATA :0x5a5a5a5a
+---- LBUS Write register   ADD :0x0825    DATA :0xa5a5a5a5
+---- LBUS Write register   ADD :0x0826    DATA :0x00000000
+---- LBUS Write register   ADD :0x0827    DATA :0xffffffff
+---- LBUS Write register   ADD :0x0c20    DATA :0x01234567
+---- LBUS Write register   ADD :0x0c21    DATA :0x76543210
+---- LBUS Write register   ADD :0x0c22    DATA :0x89abcdef
+---- LBUS Write register   ADD :0x0c23    DATA :0xfedcba98
+---- LBUS Write register   ADD :0x0c24    DATA :0x5a5a5a5a
+---- LBUS Write register   ADD :0x0c25    DATA :0xa5a5a5a5
+---- LBUS Write register   ADD :0x0c26    DATA :0x00000000
+---- LBUS Write register   ADD :0x0c27    DATA :0xffffffff
+---- LBUS Write register   ADD :0x1020    DATA :0x01234567
+---- LBUS Write register   ADD :0x1021    DATA :0x76543210
+---- LBUS Write register   ADD :0x1022    DATA :0x89abcdef
+---- LBUS Write register   ADD :0x1023    DATA :0xfedcba98
+---- LBUS Write register   ADD :0x1024    DATA :0x5a5a5a5a
+---- LBUS Write register   ADD :0x1025    DATA :0xa5a5a5a5
+---- LBUS Write register   ADD :0x1026    DATA :0x00000000
+---- LBUS Write register   ADD :0x1027    DATA :0xffffffff
+---- LBUS Write register   ADD :0x1420    DATA :0x01234567
+---- LBUS Write register   ADD :0x1421    DATA :0x76543210
+---- LBUS Write register   ADD :0x1422    DATA :0x89abcdef
+---- LBUS Write register   ADD :0x1423    DATA :0xfedcba98
+---- LBUS Write register   ADD :0x1424    DATA :0x5a5a5a5a
+---- LBUS Write register   ADD :0x1425    DATA :0xa5a5a5a5
+---- LBUS Write register   ADD :0x1426    DATA :0x00000000
+---- LBUS Write register   ADD :0x1427    DATA :0xffffffff
+---- LBUS Write register   ADD :0x1820    DATA :0x01234567
+---- LBUS Write register   ADD :0x1821    DATA :0x76543210
+---- LBUS Write register   ADD :0x1822    DATA :0x89abcdef
+---- LBUS Write register   ADD :0x1823    DATA :0xfedcba98
+---- LBUS Write register   ADD :0x1824    DATA :0x5a5a5a5a
+---- LBUS Write register   ADD :0x1825    DATA :0xa5a5a5a5
+---- LBUS Write register   ADD :0x1826    DATA :0x00000000
+---- LBUS Write register   ADD :0x1827    DATA :0xffffffff
+---- LBUS Write register   ADD :0x1c20    DATA :0x01234567
+---- LBUS Write register   ADD :0x1c21    DATA :0x76543210
+---- LBUS Write register   ADD :0x1c22    DATA :0x89abcdef
+---- LBUS Write register   ADD :0x1c23    DATA :0xfedcba98
+---- LBUS Write register   ADD :0x1c24    DATA :0x5a5a5a5a
+---- LBUS Write register   ADD :0x1c25    DATA :0xa5a5a5a5
+---- LBUS Write register   ADD :0x1c26    DATA :0x00000000
+---- LBUS Write register   ADD :0x1c27    DATA :0xffffffff
+---- Wait for  64 cycles end
+---- [Success  ]LBUS Read register   ADD :0x0020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x0021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]LBUS Read register   ADD :0x0022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x0023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]LBUS Read register   ADD :0x0024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x0025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x0026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x0820    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x0821    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]LBUS Read register   ADD :0x0822    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x0823    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]LBUS Read register   ADD :0x0824    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x0825    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x0826    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0827    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x0c20    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x0c21    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]LBUS Read register   ADD :0x0c22    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x0c23    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]LBUS Read register   ADD :0x0c24    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x0c25    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x0c26    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x0c27    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1020    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1021    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]LBUS Read register   ADD :0x1022    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1023    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]LBUS Read register   ADD :0x1024    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1025    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1026    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1027    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1420    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1421    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]LBUS Read register   ADD :0x1422    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1423    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]LBUS Read register   ADD :0x1424    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1425    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1426    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1427    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1820    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1821    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]LBUS Read register   ADD :0x1822    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1823    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]LBUS Read register   ADD :0x1824    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1825    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1826    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1827    EDAT :0xffffffff    RDAT :0xffffffff
+---- [Success  ]LBUS Read register   ADD :0x1c20    EDAT :0x01234567    RDAT :0x01234567
+---- [Success  ]LBUS Read register   ADD :0x1c21    EDAT :0x76543210    RDAT :0x76543210
+---- [Success  ]LBUS Read register   ADD :0x1c22    EDAT :0x89abcdef    RDAT :0x89abcdef
+---- [Success  ]LBUS Read register   ADD :0x1c23    EDAT :0xfedcba98    RDAT :0xfedcba98
+---- [Success  ]LBUS Read register   ADD :0x1c24    EDAT :0x5a5a5a5a    RDAT :0x5a5a5a5a
+---- [Success  ]LBUS Read register   ADD :0x1c25    EDAT :0xa5a5a5a5    RDAT :0xa5a5a5a5
+---- [Success  ]LBUS Read register   ADD :0x1c26    EDAT :0x00000000    RDAT :0x00000000
+---- [Success  ]LBUS Read register   ADD :0x1c27    EDAT :0xffffffff    RDAT :0xffffffff
+---- LBUS BRAM write   ADD :0x00010000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00020000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00040000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00080000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00100000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00200000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00400000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00800000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM read   ADD :0x00010000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00010000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00020000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00020000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00040000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00040000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00080000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00080000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00100000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00100000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00200000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00200000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00400000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00400000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00800000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00800000    SIZE :0x100 success read end
+---- LBUS BRAM write   ADD :0x00010040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00020040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00040040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00080040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00100040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00200040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00400040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00800040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM read   ADD :0x00010040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00010040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00020040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00020040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00040040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00040040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00080040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00080040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00100040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00100040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00200040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00200040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00400040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00400040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00800040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00800040    SIZE :0x100 success read end
+---- LBUS DRAM write   ADD :0x02000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x04000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x08000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x10000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x20000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x40000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x80000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM read   ADD :0x02000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x04000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x08000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x10000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x20000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x40000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x80000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM write   ADD :0x02000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x04000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x08000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x10000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x20000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x40000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x80000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM read   ADD :0x02000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x04000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x08000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x10000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x20000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x40000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x80000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- Wait for 255 cycles end
+---- tb_07 test completed !
+ 
+-- ======================================================================
+--                    Simulation tb_07 Successful End                       
+-- ======================================================================

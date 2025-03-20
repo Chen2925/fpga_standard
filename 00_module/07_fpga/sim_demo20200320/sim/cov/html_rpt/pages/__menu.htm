@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <link type="text/css" rel="StyleSheet" href="../css/mtitree.css"/>
+  <link type="text/css" rel="StyleSheet" href="../css/ucdb2html.css"/>
+  <script type="text/javascript" src="../scripts/mtitree.js"></script>
+  <script type="text/javascript">
+  <!--
+  function openAll() {
+    if (document.getElementById('pane1').style.display != 'none') t.openAll();
+    if (document.getElementById('pane2').style.display != 'none') d.openAll();
+    if (document.getElementById('pane3').style.display != 'none') u.openAll();
+  }
+  function closeAll() {
+    if (document.getElementById('pane1').style.display != 'none') t.closeAll();
+    if (document.getElementById('pane2').style.display != 'none') d.closeAll();
+    if (document.getElementById('pane3').style.display != 'none') u.closeAll();
+  }
+  function disableAll() {
+    document.getElementById('pane1').style.display='none';
+    document.getElementById('pane2').style.display='none';
+    document.getElementById('pane3').style.display='none';
+  }
+  function buttonsOff() {
+    document.getElementById('button1').className='button_off';
+    document.getElementById('button2').className='button_off';
+    document.getElementById('button3').className='button_off';
+  }
+  function drawTo(c) {
+    switch (c) {
+      case 1: t.drawTreeTo(document.getElementById('pane1')); break;
+      case 2: d.drawTreeTo(document.getElementById('pane2')); break;
+      case 3: u.drawTreeTo(document.getElementById('pane3')); break;
+    }
+  }
+  function select(c) {
+    disableAll(); document.getElementById('pane'   + c).style.display='';
+    buttonsOff(); document.getElementById('button' + c).className='button_on';
+    setTimeout('drawTo(' + c + ')', 500);
+  }
+  // -->
+  </script>
+</head>
+<body>
+  <table class="buttons" cellspacing="2" cellpadding="2" width="100%"><tr>
+    <td width="75" class="button_off" id="button1"
+        title="Select testplan tree" onclick="select('1')">Testplan</td>
+    <td width="75" class="button_off" id="button2"
+        title="Select design tree" onclick="select('2')">Design</td>
+    <td width="75" class="button_off" id="button3"
+        title="Select design unit list" onclick="select('3')">DesUnits</td>
+    <td class="invisible">&nbsp;</td><!-- spacer -->
+  </tr></table><hr/>
+  <div class="pane" id="pane1" style="display:none;">
+  <script type="text/javascript">
+  <!--
+    t = new Tree('t');
+    
+    if (t.length() > 0) {
+      document.getElementById('pane1').style.display='';
+      document.getElementById('button1').className='button_on';
+      document.write(t);
+    }
+  //-->
+  </script>
+  </div>
+  <div class="pane" id="pane2" style="display:none;">
+  <script type="text/javascript">
+  <!--
+    d = new Tree('d');
+    d.add(1, 0, 'tb_top', 'z000031.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(2, 1, 'U_SIM_MODEL (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(3, 1, 'U_FPGA_TOP_SIM', 'z000053.htm', '', '../icons/square-ltBlue.png', 'SystemVerilog');
+d.add(4, 3, 'U01_LBUS_TOP', 'z002866.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(5, 4, 'U00_LBUS_IF', 'z006397.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(6, 5, 'LBUS_DIO_GP[31] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(7, 5, 'LBUS_DIO_GP[30] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(8, 5, 'LBUS_DIO_GP[29] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(9, 5, 'LBUS_DIO_GP[28] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(10, 5, 'LBUS_DIO_GP[27] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(11, 5, 'LBUS_DIO_GP[26] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(12, 5, 'LBUS_DIO_GP[25] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(13, 5, 'LBUS_DIO_GP[24] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(14, 5, 'LBUS_DIO_GP[23] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(15, 5, 'LBUS_DIO_GP[22] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(16, 5, 'LBUS_DIO_GP[21] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(17, 5, 'LBUS_DIO_GP[20] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(18, 5, 'LBUS_DIO_GP[19] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(19, 5, 'LBUS_DIO_GP[18] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(20, 5, 'LBUS_DIO_GP[17] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(21, 5, 'LBUS_DIO_GP[16] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(22, 5, 'LBUS_DIO_GP[15] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(23, 5, 'LBUS_DIO_GP[14] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(24, 5, 'LBUS_DIO_GP[13] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(25, 5, 'LBUS_DIO_GP[12] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(26, 5, 'LBUS_DIO_GP[11] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(27, 5, 'LBUS_DIO_GP[10] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(28, 5, 'LBUS_DIO_GP[9] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(29, 5, 'LBUS_DIO_GP[8] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(30, 5, 'LBUS_DIO_GP[7] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(31, 5, 'LBUS_DIO_GP[6] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(32, 5, 'LBUS_DIO_GP[5] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(33, 5, 'LBUS_DIO_GP[4] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(34, 5, 'LBUS_DIO_GP[3] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(35, 5, 'LBUS_DIO_GP[2] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(36, 5, 'LBUS_DIO_GP[1] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(37, 5, 'LBUS_DIO_GP[0] (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(38, 4, 'U01_REG_IF', 'z006872.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(39, 4, 'U02_COM_REG', 'z008111.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(40, 4, 'U03_BRAM_IF', 'z008994.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(41, 4, 'U04_DRAM_RD_IF', 'z011260.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(42, 41, 'U_DBUF (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(43, 4, 'U05_DRAM_WR_IF', 'z012628.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(44, 43, 'U_DBUF (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(45, 3, 'U_FPGA_TOP_SIMA', 'z014219.htm', '', '../icons/square-ltBlue.png', 'SystemVerilog');
+d.add(46, 45, 'U_REG_BIST_0', 'z016794.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(47, 45, 'U_REG_BIST_1', 'z018182.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(48, 45, 'U_REG_BIST_2', 'z019570.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(49, 45, 'U_REG_BIST_3', 'z020958.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(50, 45, 'U_REG_BIST_4', 'z022346.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(51, 45, 'U_REG_BIST_5', 'z023734.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(52, 45, 'U_REG_BIST_6', 'z025122.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(53, 45, 'U_REG_BIST_7', 'z026510.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(54, 45, 'U_BRAM_BIST0', 'z027898.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(55, 54, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(56, 45, 'U_BRAM_BIST1', 'z028189.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(57, 56, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(58, 45, 'U_BRAM_BIST2', 'z028480.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(59, 58, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(60, 45, 'U_BRAM_BIST3', 'z028771.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(61, 60, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(62, 45, 'U_BRAM_BIST4', 'z029062.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(63, 62, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(64, 45, 'U_BRAM_BIST5', 'z029353.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(65, 64, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(66, 45, 'U_BRAM_BIST6', 'z029644.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(67, 66, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(68, 45, 'U_BRAM_BIST7', 'z029935.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(69, 68, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(70, 45, 'DRAM_BIST0', 'z030226.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(71, 70, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(72, 45, 'DRAM_BIST1', 'z030612.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(73, 72, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(74, 45, 'DRAM_BIST2', 'z030998.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(75, 74, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(76, 45, 'DRAM_BIST3', 'z031384.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(77, 76, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(78, 45, 'DRAM_BIST4', 'z031770.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(79, 78, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(80, 45, 'DRAM_BIST5', 'z032156.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(81, 80, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(82, 45, 'DRAM_BIST6', 'z032542.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(83, 82, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(84, 1, 'U_FPGA_TOP_SIMA', 'z032928.htm', '', '../icons/square-ltBlue.png', 'SystemVerilog');
+d.add(85, 84, 'U_REG_BIST_0', 'z035503.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(86, 84, 'U_REG_BIST_1', 'z036891.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(87, 84, 'U_REG_BIST_2', 'z038279.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(88, 84, 'U_REG_BIST_3', 'z039667.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(89, 84, 'U_REG_BIST_4', 'z041055.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(90, 84, 'U_REG_BIST_5', 'z042443.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(91, 84, 'U_REG_BIST_6', 'z043831.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(92, 84, 'U_REG_BIST_7', 'z045219.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(93, 84, 'U_BRAM_BIST0', 'z046607.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(94, 93, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(95, 84, 'U_BRAM_BIST1', 'z046898.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(96, 95, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(97, 84, 'U_BRAM_BIST2', 'z047189.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(98, 97, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(99, 84, 'U_BRAM_BIST3', 'z047480.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(100, 99, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(101, 84, 'U_BRAM_BIST4', 'z047771.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(102, 101, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(103, 84, 'U_BRAM_BIST5', 'z048062.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(104, 103, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(105, 84, 'U_BRAM_BIST6', 'z048353.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(106, 105, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(107, 84, 'U_BRAM_BIST7', 'z048644.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(108, 107, 'U_BIST_BRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(109, 84, 'DRAM_BIST0', 'z048935.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(110, 109, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(111, 84, 'DRAM_BIST1', 'z049321.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(112, 111, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(113, 84, 'DRAM_BIST2', 'z049707.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(114, 113, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(115, 84, 'DRAM_BIST3', 'z050093.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(116, 115, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(117, 84, 'DRAM_BIST4', 'z050479.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(118, 117, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(119, 84, 'DRAM_BIST5', 'z050865.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(120, 119, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(121, 84, 'DRAM_BIST6', 'z051251.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(122, 121, 'U_BIST_DRAM (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+d.add(123, 0, 'glbl (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+
+    if ((d.length() > 0) && (t.length() < 1)) {
+      document.getElementById('pane2').style.display='';
+      document.getElementById('button2').className='button_on';
+      document.write(d);
+    }
+  //-->
+  </script>
+  </div>
+  <div class="pane" id="pane3" style="display:none;">
+  <script type="text/javascript">
+  <!--
+    u = new Tree('u');
+    u.add(1, 0, 'work.glbl (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(2, 0, 'work.DRAM_WR_IF', 'z000019.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(3, 0, 'work.DRAM_RD_IF', 'z000022.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(4, 0, 'work.BRAM_IF', 'z000023.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(5, 0, 'work.COM_REG', 'z000024.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(6, 0, 'work.REG_IF', 'z000025.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(7, 0, 'work.LBUS_IF', 'z000026.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(8, 0, 'work.LBUS_TOP', 'z000027.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(9, 0, 'work.FPGA_TOP_SIM', 'z000028.htm', '', '../icons/square-ltBlue.png', 'SystemVerilog');
+u.add(10, 0, 'work.SIM_MODEL (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(11, 0, 'work.tb_top', 'z000030.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(12, 0, 'XILINXCORELIB_VER.BLK_MEM_GEN_V7_3_softecc_output_reg_stage (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(13, 0, 'XILINXCORELIB_VER.BLK_MEM_GEN_V7_3_output_stage (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(14, 0, 'XILINXCORELIB_VER.BLK_MEM_GEN_V7_3_mem_module (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(15, 0, 'UNISIMS_VER.IOBUF (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(16, 0, 'work.DRAM_BIST', 'z000014.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(17, 0, 'work.sbram_i32o32_d64k (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(18, 0, 'work.BRAM_BIST', 'z000016.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(19, 0, 'work.REG_BIST', 'z000017.htm', '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(20, 0, 'work.FPGA_TOP_SIMA', 'z000018.htm', '', '../icons/square-ltBlue.png', 'SystemVerilog');
+u.add(21, 0, 'XILINXCORELIB_VER.BLK_MEM_GEN_V7_3 (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+u.add(22, 0, 'work.sbram_i32o32_d1024 (no coverage)', null, '', '../icons/square-ltBlue.png', 'Verilog');
+
+    // document.write(u);
+  //-->
+  </script>
+  <h3>Loading...</h3>
+  </div>
+  
+</body>
+</html>

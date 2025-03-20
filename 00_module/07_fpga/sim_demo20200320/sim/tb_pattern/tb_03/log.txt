@@ -1,0 +1,74 @@
+ 
+-- ======================================================================
+--                     Simulation tb_03 start                               
+-- ======================================================================
+---- Initial simulation
+// ================================================================
+// File Name    : log.txt                                          
+// Test Pattern : tb_03                                     
+// ================================================================
+---- clock ---- 1111 ---- enable
+---- Wait for  64 cycles end
+---- Wait for  64 cycles end
+---- DRAM write PORT :0x01    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x02    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x04    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x08    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x10    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x20    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM write PORT :0x40    ADD :0x0000040    SIZE :0x100
+---- DRAM write end
+---- DRAM read PORT :0x01    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x01    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x02    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x02    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x04    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x04    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x08    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x08    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x10    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x10    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x20    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x20    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM read PORT :0x40    ADD :0x0000040    SIZE :0x100
+---- [Success  ]DRAM  PORT :0x40    ADD :0x0000040    SIZE :0x100    success read end
+---- DRAM write PORT :0x01    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x02    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x04    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x08    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x10    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x20    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM write PORT :0x40    ADD :0x0000080    SIZE :0x200
+---- DRAM write end
+---- DRAM read PORT :0x01    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x01    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x02    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x02    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x04    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x04    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x08    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x08    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x10    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x10    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x20    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x20    ADD :0x0000080    SIZE :0x200    success read end
+---- DRAM read PORT :0x40    ADD :0x0000080    SIZE :0x200
+---- [Success  ]DRAM  PORT :0x40    ADD :0x0000080    SIZE :0x200    success read end
+---- Wait for 255 cycles end
+---- tb_03 test completed !
+ 
+-- ======================================================================
+--                    Simulation tb_03 Successful End                       
+-- ======================================================================

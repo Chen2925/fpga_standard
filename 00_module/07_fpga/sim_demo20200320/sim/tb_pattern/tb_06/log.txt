@@ -1,0 +1,74 @@
+ 
+-- ======================================================================
+--                     Simulation tb_06 start                               
+-- ======================================================================
+---- Initial simulation
+// ================================================================
+// File Name    : log.txt                                          
+// Test Pattern : tb_06                                     
+// ================================================================
+---- clock ---- 1111 ---- enable
+---- Wait for  64 cycles end
+---- Wait for  64 cycles end
+---- LBUS DRAM write   ADD :0x02000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x04000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x08000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x10000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x20000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x40000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x80000040      SIZE :0x100
+---- LBUS DRAM write end
+---- LBUS DRAM read   ADD :0x02000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x04000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x08000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x10000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x20000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x40000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x80000040      SIZE :0x100
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM write   ADD :0x02000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x04000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x08000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x10000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x20000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x40000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM write   ADD :0x80000080      SIZE :0x200
+---- LBUS DRAM write end
+---- LBUS DRAM read   ADD :0x02000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x04000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x08000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x10000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x20000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x40000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- LBUS DRAM read   ADD :0x80000080      SIZE :0x200
+---- [Success  ]LBUS DRAM success read end
+---- Wait for 255 cycles end
+---- tb_06 test completed !
+ 
+-- ======================================================================
+--                    Simulation tb_06 Successful End                       
+-- ======================================================================

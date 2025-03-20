@@ -1,0 +1,565 @@
+
+*** Running vivado
+    with args -log PCIE_IF_GX.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PCIE_IF_GX.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source PCIE_IF_GX.tcl -notrace
+Command: synth_design -top PCIE_IF_GX -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-1540] The version limit for your license is '2025.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34860
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1250.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PCIE_IF_GX' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_if_gx_x1.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_IF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_if.v:17]
+INFO: [Synth 8-6157] synthesizing module 'afifo_i90o90_d512' [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/afifo_i90o90_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'afifo_i90o90_d512' (1#1) [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/afifo_i90o90_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_IF' (2#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_if.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_LBUF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_lbuf.v:17]
+INFO: [Synth 8-6157] synthesizing module 'afifo_i72o72_d2048' [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/afifo_i72o72_d2048_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'afifo_i72o72_d2048' (3#1) [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/afifo_i72o72_d2048_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PULSE_GEN' [G:/00_module/07_fpga/sim_demo20200320/rtl/01_user_ip/pulse_gen.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PULSE_GEN' (4#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/01_user_ip/pulse_gen.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_LBUF' (5#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_lbuf.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_DFK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dfk.v:17]
+	Parameter p_CH_ID bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_DFK' (6#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dfk.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_DEK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dek.v:17]
+	Parameter p_CH_ID bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_DEK' (7#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dek.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_FBUF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_fbuf.v:17]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_i108o108_d512' [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sfifo_i108o108_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_i108o108_d512' (8#1) [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sfifo_i108o108_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_FBUF' (9#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_fbuf.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_DMA' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dma.v:17]
+	Parameter p_CH_ID bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_DMA' (10#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dma.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_CPLD_UEK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_uek.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_CPLD_UEK' (11#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_uek.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_CPLD_DFK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dfk.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_CPLD_DFK' (12#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dfk.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_CPLD_DPK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:17]
+INFO: [Synth 8-6157] synthesizing module 'sram_i64o64_d256' [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sram_i64o64_d256_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sram_i64o64_d256' (13#1) [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sram_i64o64_d256_stub.v:6]
+WARNING: [Synth 8-689] width (10) of port connection 'addra' does not match port width (8) of module 'sram_i64o64_d256' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:163]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'sram_i64o64_d256' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:166]
+WARNING: [Synth 8-689] width (64) of port connection 'rsta_busy' does not match port width (1) of module 'sram_i64o64_d256' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:169]
+WARNING: [Synth 8-689] width (64) of port connection 'rstb_busy' does not match port width (1) of module 'sram_i64o64_d256' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_CPLD_DPK' (14#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_DFK__parameterized0' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dfk.v:17]
+	Parameter p_CH_ID bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_DFK__parameterized0' (14#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dfk.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_DEK__parameterized0' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dek.v:17]
+	Parameter p_CH_ID bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_DEK__parameterized0' (14#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dek.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_DMA__parameterized0' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dma.v:17]
+	Parameter p_CH_ID bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_DMA__parameterized0' (14#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_dma.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_IF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_if.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_IF' (15#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_if.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_LBUF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_lbuf.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_LBUF' (16#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_lbuf.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_EBUF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_ebuf.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_EBUF' (17#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_ebuf.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_UFK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_ufk.v:17]
+	Parameter p_CH_ID bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_UFK' (18#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_ufk.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_UEK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_uek.v:17]
+	Parameter p_CH_ID bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_UEK' (19#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_uek.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_DMA' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_dma.v:17]
+	Parameter p_CH_ID bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_DMA' (20#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_dma.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_UFK__parameterized0' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_ufk.v:17]
+	Parameter p_CH_ID bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_UFK__parameterized0' (20#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_ufk.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_UEK__parameterized0' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_uek.v:17]
+	Parameter p_CH_ID bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_UEK__parameterized0' (20#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_uek.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_DMA__parameterized0' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_dma.v:17]
+	Parameter p_CH_ID bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_DMA__parameterized0' (20#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_dma.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_RX' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_rx.v:17]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_i180_o180_d512' [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sfifo_i180_o180_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_i180_o180_d512' (21#1) [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sfifo_i180_o180_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_RX' (22#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_rx.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_TX' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_tx.v:17]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_i72o72_d512' [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sfifo_i72o72_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_i72o72_d512' (23#1) [G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/.Xil/Vivado-13260-DESKTOP-OBM7L7C/realtime/sfifo_i72o72_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_TX' (24#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_tx.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_REG_IF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_reg_if.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_REG_IF' (25#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_reg_if.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_REG_ACK' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_reg_ack.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_REG_ACK' (26#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_reg_ack.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_REG_INT' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_reg_int.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_REG_INT' (27#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_reg_int.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_REG' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_reg.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_REG' (28#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_reg.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_REG' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_reg.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_REG' (29#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_reg.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_CPLD_IF' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_if.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_CPLD_IF' (30#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_if.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_DN_ARBIT' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_arbit.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_DN_ARBIT' (31#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_arbit.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_UP_ARBIT' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_arbit.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_UP_ARBIT' (32#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_up_arbit.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_IF_GX' (33#1) [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_if_gx_x1.v:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1250.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1250.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1250.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 1250.559 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i180_o180_d512/sfifo_i180_o180_d512/sfifo_i180_o180_d512_in_context.xdc] for cell 'U_PCIE_RX/U_CBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i180_o180_d512/sfifo_i180_o180_d512/sfifo_i180_o180_d512_in_context.xdc] for cell 'U_PCIE_RX/U_CBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i72o72_d512/sfifo_i72o72_d512/sfifo_i72o72_d512_in_context.xdc] for cell 'U_PCIE_TX/U_TX_BUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i72o72_d512/sfifo_i72o72_d512/sfifo_i72o72_d512_in_context.xdc] for cell 'U_PCIE_TX/U_TX_BUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_IF/U_CBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_IF/U_CBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_IF/U_CBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_IF/U_CBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_IF/U_CBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_IF/U_CBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_IF/U_CBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i90o90_d512/afifo_i90o90_d512/afifo_i90o90_d512_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_IF/U_CBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_LBUF/U_DN_LBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_LBUF/U_DN_LBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_LBUF/U_DN_LBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_LBUF/U_DN_LBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_LBUF/U_UP_CBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_LBUF/U_UP_CBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_LBUF/U_UP_DBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_LBUF/U_UP_DBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_LBUF/U_UP_CBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_LBUF/U_UP_CBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_LBUF/U_UP_DBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/1_afifo/afifo_i72o72_d2048/afifo_i72o72_d2048/afifo_i72o72_d2048_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_LBUF/U_UP_DBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_FBUF/U_DN_FBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_FBUF/U_DN_FBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_FBUF/U_DN_FBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_FBUF/U_DN_FBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_EBUF/U_UP_EBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_UP[0].U_PCIE_UP_EBUF/U_UP_EBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_EBUF/U_UP_EBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/2_sfifo/sfifo_i108o108_d512/sfifo_i108o108_d512/sfifo_i108o108_d512_in_context.xdc] for cell 'GROUP_UP[1].U_PCIE_UP_EBUF/U_UP_EBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/0_sbram/sram_i64o64_d256/sram_i64o64_d256/sram_i64o64_d256_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_CPLD_DPK/U_DBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/0_sbram/sram_i64o64_d256/sram_i64o64_d256/sram_i64o64_d256_in_context.xdc] for cell 'GROUP_DN[0].U_PCIE_DN_CPLD_DPK/U_DBUF'
+Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/0_sbram/sram_i64o64_d256/sram_i64o64_d256/sram_i64o64_d256_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_CPLD_DPK/U_DBUF'
+Finished Parsing XDC File [g:/00_module/07_fpga/sim_demo20200320/rtl/00_xilinx_ip/0_sbram/sram_i64o64_d256/sram_i64o64_d256/sram_i64o64_d256_in_context.xdc] for cell 'GROUP_DN[1].U_PCIE_DN_CPLD_DPK/U_DBUF'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1368.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1368.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1368.867 ; gain = 118.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1368.867 ; gain = 118.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U_PCIE_RX/U_CBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U_PCIE_TX/U_TX_BUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[0].U_PCIE_DN_IF /U_CBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[1].U_PCIE_DN_IF /U_CBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[0].U_PCIE_UP_IF /U_CBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[1].U_PCIE_UP_IF /U_CBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[0].U_PCIE_DN_LBUF /U_DN_LBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[1].U_PCIE_DN_LBUF /U_DN_LBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[0].U_PCIE_UP_LBUF /U_UP_CBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[1].U_PCIE_UP_LBUF /U_UP_CBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[0].U_PCIE_UP_LBUF /U_UP_DBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[1].U_PCIE_UP_LBUF /U_UP_DBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[0].U_PCIE_DN_FBUF /U_DN_FBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[1].U_PCIE_DN_FBUF /U_DN_FBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[0].U_PCIE_UP_EBUF /U_UP_EBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_UP[1].U_PCIE_UP_EBUF /U_UP_EBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[0].U_PCIE_DN_CPLD_DPK /U_DBUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \GROUP_DN[1].U_PCIE_DN_CPLD_DPK /U_DBUF. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1368.867 ; gain = 118.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_DN_IF__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_DN_DMA'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_DN_CPLD_DPK__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_DN_IF'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_DN_DMA__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_DN_CPLD_DPK'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_UP_LBUF__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_UP_DMA'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_UP_LBUF'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_UP_DMA__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_DN_ARBIT'
+INFO: [Synth 8-802] inferred FSM for state register 'r_FSM_reg' in module 'PCIE_UP_ARBIT'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  p_IDLE |                          0000001 |                          0000001
+              p_FBUF_CHK |                          0000010 |                          0000010
+              p_FBUF_REQ |                          0000100 |                          0000100
+              p_LBUF_CHK |                          0001000 |                          0001000
+                p_TX_REQ |                          0010000 |                          0010000
+               p_TX_DATA |                          0100000 |                          0100000
+              p_EBUF_REQ |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_FSM_reg' in module 'PCIE_DN_DMA'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  p_IDLE |                          0000001 |                          0000001
+              p_FBUF_CHK |                          0000010 |                          0000010
+              p_FBUF_REQ |                          0000100 |                          0000100
+              p_LBUF_CHK |                          0001000 |                          0001000
+                p_TX_REQ |                          0010000 |                          0010000
+               p_TX_DATA |                          0100000 |                          0100000
+              p_EBUF_REQ |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_FSM_reg' in module 'PCIE_DN_DMA__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  p_IDLE |                           000001 |                           000001
+              p_EBUF_CHK |                           000010 |                           000010
+              p_EBUF_REQ |                           000100 |                           000100
+                p_TX_REQ |                           001000 |                           001000
+               p_TX_DATA |                           010000 |                           010000
+              p_FBUF_REQ |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_FSM_reg' in module 'PCIE_UP_DMA'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  p_IDLE |                           000001 |                           000001
+              p_EBUF_CHK |                           000010 |                           000010
+              p_EBUF_REQ |                           000100 |                           000100
+                p_TX_REQ |                           001000 |                           001000
+               p_TX_DATA |                           010000 |                           010000
+              p_FBUF_REQ |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_FSM_reg' in module 'PCIE_UP_DMA__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  P_IDLE |                         00000001 |                         00000001
+                   P_CPK |                         00000010 |                         00000010
+                   P_UEK |                         00000100 |                         00000100
+                   P_UFK |                         00001000 |                         00001000
+                   P_DEK |                         00010000 |                         00010000
+                   P_DFK |                         00100000 |                         00100000
+                   P_DPK |                         01000000 |                         01000000
+                   P_UPK |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_FSM_reg' in module 'PCIE_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  P_IDLE |                            00001 |                            00001
+               P_CH0_REQ |                            00010 |                            00010
+                P_CH0_TX |                            00100 |                            00100
+               P_CH1_REQ |                            01000 |                            01000
+                P_CH1_TX |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_FSM_reg' in module 'PCIE_DN_ARBIT'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  P_IDLE |                            00001 |                            00001
+               P_CH0_REQ |                            00010 |                            00010
+                P_CH0_TX |                            00100 |                            00100
+               P_CH1_REQ |                            01000 |                            01000
+                P_CH1_TX |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_FSM_reg' in module 'PCIE_UP_ARBIT'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.867 ; gain = 118.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 8     
+	   2 Input   57 Bit       Adders := 2     
+	   2 Input   25 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 132   
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	              256 Bit    Registers := 8     
+	              180 Bit    Registers := 1     
+	              128 Bit    Registers := 8     
+	               96 Bit    Registers := 12    
+	               90 Bit    Registers := 6     
+	               72 Bit    Registers := 6     
+	               68 Bit    Registers := 3     
+	               64 Bit    Registers := 78    
+	               32 Bit    Registers := 49    
+	               29 Bit    Registers := 2     
+	               25 Bit    Registers := 2     
+	               24 Bit    Registers := 8     
+	               16 Bit    Registers := 54    
+	               12 Bit    Registers := 7     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 31    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 133   
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 25    
+	                1 Bit    Registers := 735   
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 64    
+	   2 Input   16 Bit        Muxes := 10    
+	   2 Input   15 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 14    
+	   9 Input    8 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 7     
+	   7 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 165   
+	   6 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 19    
+	   2 Input    3 Bit        Muxes := 6     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 48    
+	   5 Input    2 Bit        Muxes := 5     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 393   
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1408.641 ; gain = 158.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1412.395 ; gain = 161.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1412.395 ; gain = 161.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1434.781 ; gain = 184.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1446.965 ; gain = 196.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1446.965 ; gain = 196.406
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin GROUP_DN[0].U_PCIE_DN_CPLD_DPK/s_DBUF_RDT[0] with 1st driver pin 'GROUP_DN[0].U_PCIE_DN_CPLD_DPK/U_DBUF/doutb[0]' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:158]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin GROUP_DN[0].U_PCIE_DN_CPLD_DPK/s_DBUF_RDT[0] with 2nd driver pin 'GROUP_DN[0].U_PCIE_DN_CPLD_DPK/U_DBUF/rsta_busy' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:158]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin GROUP_DN[0].U_PCIE_DN_CPLD_DPK/s_DBUF_RDT[0] with 3rd driver pin 'GROUP_DN[0].U_PCIE_DN_CPLD_DPK/U_DBUF/rstb_busy' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:158]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin GROUP_DN[1].U_PCIE_DN_CPLD_DPK/s_DBUF_RDT[0] with 1st driver pin 'GROUP_DN[1].U_PCIE_DN_CPLD_DPK/U_DBUF/doutb[0]' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:158]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin GROUP_DN[1].U_PCIE_DN_CPLD_DPK/s_DBUF_RDT[0] with 2nd driver pin 'GROUP_DN[1].U_PCIE_DN_CPLD_DPK/U_DBUF/rsta_busy' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:158]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin GROUP_DN[1].U_PCIE_DN_CPLD_DPK/s_DBUF_RDT[0] with 3rd driver pin 'GROUP_DN[1].U_PCIE_DN_CPLD_DPK/U_DBUF/rstb_busy' [G:/00_module/07_fpga/sim_demo20200320/rtl/03_pcie_if_gx/pcie_dn_cpld_dpk.v:158]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        2|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1446.965 ; gain = 196.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1446.965 ; gain = 196.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1446.965 ; gain = 196.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1446.965 ; gain = 196.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|PCIE_IF_GX  | GROUP_UP[0].U_PCIE_UP_IF/r_CBUF_RSHFT_reg[6]               | 6      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|PCIE_IF_GX  | GROUP_DN[0].U_PCIE_DN_LBUF/r_DN_LBUF_WDT_reg[65]           | 4      | 62    | YES          | NO                 | YES               | 62     | 0       | 
+|PCIE_IF_GX  | GROUP_UP[0].U_PCIE_UP_DMA/r_UPK_TX_END_reg                 | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|PCIE_IF_GX  | U_PCIE_DN_REG/r_REG_RD_ACK_reg                             | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|PCIE_IF_GX  | U_PCIE_UP_REG/r_REG_RD_ACK_reg                             | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|PCIE_IF_GX  | GROUP_DN[0].U_PCIE_DN_CPLD_UEK/r_UP_EBUF_RD_REQ_DFF_reg[3] | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|PCIE_IF_GX  | U_PCIE_REG_INT/r_REG_RD_ACK_reg                            | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|PCIE_IF_GX  | U_PCIE_DN_CPLD_IF/r_DFK_C0_DATA_reg[63]                    | 4      | 64    | YES          | NO                 | YES               | 64     | 0       | 
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |sram_i64o64_d256     |         2|
+|2     |sfifo_i108o108_d512  |         4|
+|3     |afifo_i90o90_d512    |         4|
+|4     |afifo_i72o72_d2048   |         6|
+|5     |sfifo_i180_o180_d512 |         1|
+|6     |sfifo_i72o72_d512    |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |afifo_i72o72_d2048   |     6|
+|7     |afifo_i90o90_d512    |     4|
+|11    |sfifo_i108o108_d512  |     4|
+|15    |sfifo_i180_o180_d512 |     1|
+|16    |sfifo_i72o72_d512    |     1|
+|17    |sram_i64o64_d256     |     2|
+|19    |BUFG                 |     2|
+|20    |CARRY4               |   306|
+|21    |LUT1                 |    68|
+|22    |LUT2                 |   975|
+|23    |LUT3                 |   814|
+|24    |LUT4                 |  1059|
+|25    |LUT5                 |   855|
+|26    |LUT6                 |  1537|
+|27    |SRL16E               |   141|
+|28    |FDCE                 | 13242|
+|29    |FDPE                 |    45|
+|30    |FDRE                 |   157|
+|31    |FDSE                 |    16|
+|32    |IBUF                 |   469|
+|33    |OBUF                 |   822|
+|34    |OBUFT                |    78|
++------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1446.965 ; gain = 196.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 6 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1446.965 ; gain = 78.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1446.965 ; gain = 196.406
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 1459.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 306 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1469.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: cafce81a
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 4 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1469.684 ; gain = 219.125
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'G:/00_module/07_fpga/sim_demo20200320/m1/project/fpga_top.runs/synth_1/PCIE_IF_GX.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PCIE_IF_GX_utilization_synth.rpt -pb PCIE_IF_GX_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  8 10:45:52 2025...

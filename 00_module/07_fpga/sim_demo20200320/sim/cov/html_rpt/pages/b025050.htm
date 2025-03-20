@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <!-- original name: _tb_top_U_FPGA_TOP_SIM_U_ARBITA_FB0ContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  <script type="text/javascript" src="../scripts/popup.js"></script>
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">ModelSim</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000041.htm">tb_top</a>/<a href="z003680.htm">U_FPGA_TOP_SIM</a>/<a href="z025050.htm">U_ARBITA_FB0</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg25051"/><hr/><table>
+  <tr l="153" lnk="__HDL_srcfile_18.htm#153" z="        if (RST) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="153" lnk="__HDL_srcfile_18.htm#153" z="        if (RST) begin" k="25051_0$025050" h="268" c="g"/>
+  <tr cr="c" t="E" l="155" lnk="__HDL_srcfile_18.htm#155" z="        end else begin" k="25051_1$025050" h="40158" c="g"/>
+  </table>
+  </div><div><a name="cvg25052"/><hr/><table>
+  <tr l="156" lnk="__HDL_srcfile_18.htm#156" z="            case (r_FSM)" c="Y" p="55.55"/><tr/>
+  <tr cr="c" t="T" l="157" lnk="__HDL_srcfile_18.htm#157" z="                P_IDLE  :" k="25052_0$025050" h="202" c="g"/>
+  <tr cr="c" t="T" l="166" lnk="__HDL_srcfile_18.htm#166" z="                P_CHK  :" k="25052_1$025050" h="36256" c="g"/>
+  <tr cr="m" t="T" l="185" lnk="__HDL_srcfile_18.htm#185" z="                P_CH0   :" h="0" c="r"/>
+  <tr cr="c" t="T" l="194" lnk="__HDL_srcfile_18.htm#194" z="                P_CH1   :" k="25052_3$025050" h="900" c="g"/>
+  <tr cr="c" t="T" l="203" lnk="__HDL_srcfile_18.htm#203" z="                P_CH2   :" k="25052_4$025050" h="1400" c="g"/>
+  <tr cr="c" t="T" l="212" lnk="__HDL_srcfile_18.htm#212" z="                P_CH3   :" k="25052_5$025050" h="1400" c="g"/>
+  <tr cr="m" t="T" l="221" lnk="__HDL_srcfile_18.htm#221" z="                P_CH4   :" h="0" c="r"/>
+  <tr cr="m" t="T" l="230" lnk="__HDL_srcfile_18.htm#230" z="                P_CH5   :" h="0" c="r"/>
+  <tr cr="m" t="T" l="239" lnk="__HDL_srcfile_18.htm#239" z="                default :" h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg25053"/><hr/><table>
+  <tr l="159" lnk="__HDL_srcfile_18.htm#159" z="                        if (ARBIT_RDY == 1'b1) begin" c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="159" lnk="__HDL_srcfile_18.htm#159" z="                        if (ARBIT_RDY == 1'b1) begin" k="25053_0$025050" h="202" c="g"/>
+  <tr cr="m" t="E" l="161" lnk="__HDL_srcfile_18.htm#161" z="                        end else begin" h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg25054"/><hr/><table>
+  <tr l="168" lnk="__HDL_srcfile_18.htm#168" z="                        if (CH0_REQ) begin" c="Y" p="57.14"/><tr/>
+  <tr cr="m" t="I" l="168" lnk="__HDL_srcfile_18.htm#168" z="                        if (CH0_REQ) begin" h="0" c="r"/>
+  <tr cr="c" t="T" l="170" lnk="__HDL_srcfile_18.htm#170" z="                        end else if (CH1_REQ) begin" k="25054_1$025050" h="150" c="g"/>
+  <tr cr="c" t="T" l="172" lnk="__HDL_srcfile_18.htm#172" z="                        end else if (CH2_REQ) begin" k="25054_2$025050" h="20" c="g"/>
+  <tr cr="c" t="T" l="174" lnk="__HDL_srcfile_18.htm#174" z="                        end else if (CH3_REQ) begin" k="25054_3$025050" h="20" c="g"/>
+  <tr cr="m" t="T" l="176" lnk="__HDL_srcfile_18.htm#176" z="                        end else if (CH4_REQ) begin" h="0" c="r"/>
+  <tr cr="m" t="T" l="178" lnk="__HDL_srcfile_18.htm#178" z="                        end else if (CH5_REQ) begin" h="0" c="r"/>
+  <tr cr="c" t="E" l="180" lnk="__HDL_srcfile_18.htm#180" z="                        end else begin" k="25054_6$025050" h="36066" c="g"/>
+  </table>
+  </div><div class="missing"><a name="cvg25055"/><hr/><table>
+  <tr l="187" lnk="__HDL_srcfile_18.htm#187" z="                        if (CH0_EOP == 1'b1) begin" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="187" lnk="__HDL_srcfile_18.htm#187" z="                        if (CH0_EOP == 1'b1) begin" h="0" c="r"/>
+  <tr cr="m" t="E" l="189" lnk="__HDL_srcfile_18.htm#189" z="                        end else begin" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg25056"/><hr/><table>
+  <tr l="196" lnk="__HDL_srcfile_18.htm#196" z="                        if (CH1_EOP == 1'b1) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="196" lnk="__HDL_srcfile_18.htm#196" z="                        if (CH1_EOP == 1'b1) begin" k="25056_0$025050" h="150" c="g"/>
+  <tr cr="c" t="E" l="198" lnk="__HDL_srcfile_18.htm#198" z="                        end else begin" k="25056_1$025050" h="750" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg25057"/><hr/><table>
+  <tr l="205" lnk="__HDL_srcfile_18.htm#205" z="                        if (CH2_EOP == 1'b1) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="205" lnk="__HDL_srcfile_18.htm#205" z="                        if (CH2_EOP == 1'b1) begin" k="25057_0$025050" h="20" c="g"/>
+  <tr cr="c" t="E" l="207" lnk="__HDL_srcfile_18.htm#207" z="                        end else begin" k="25057_1$025050" h="1380" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg25058"/><hr/><table>
+  <tr l="214" lnk="__HDL_srcfile_18.htm#214" z="                        if (CH3_EOP == 1'b1) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="214" lnk="__HDL_srcfile_18.htm#214" z="                        if (CH3_EOP == 1'b1) begin" k="25058_0$025050" h="20" c="g"/>
+  <tr cr="c" t="E" l="216" lnk="__HDL_srcfile_18.htm#216" z="                        end else begin" k="25058_1$025050" h="1380" c="g"/>
+  </table>
+  </div><div class="missing"><a name="cvg25059"/><hr/><table>
+  <tr l="223" lnk="__HDL_srcfile_18.htm#223" z="                        if (CH4_EOP == 1'b1) begin" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="223" lnk="__HDL_srcfile_18.htm#223" z="                        if (CH4_EOP == 1'b1) begin" h="0" c="r"/>
+  <tr cr="m" t="E" l="225" lnk="__HDL_srcfile_18.htm#225" z="                        end else begin" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg25060"/><hr/><table>
+  <tr l="232" lnk="__HDL_srcfile_18.htm#232" z="                        if (CH5_EOP == 1'b1) begin" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="232" lnk="__HDL_srcfile_18.htm#232" z="                        if (CH5_EOP == 1'b1) begin" h="0" c="r"/>
+  <tr cr="m" t="E" l="234" lnk="__HDL_srcfile_18.htm#234" z="                        end else begin" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg25061"/><hr/><table>
+  <tr l="257" lnk="__HDL_srcfile_18.htm#257" z="        if (RST) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="257" lnk="__HDL_srcfile_18.htm#257" z="        if (RST) begin" k="25061_0$025050" h="268" c="g"/>
+  <tr cr="c" t="E" l="264" lnk="__HDL_srcfile_18.htm#264" z="        end else begin" k="25061_1$025050" h="40158" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg25062"/><hr/><table>
+  <tr l="282" lnk="__HDL_srcfile_18.htm#282" z="        if (RST) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="282" lnk="__HDL_srcfile_18.htm#282" z="        if (RST) begin" k="25062_0$025050" h="268" c="g"/>
+  <tr cr="c" t="E" l="289" lnk="__HDL_srcfile_18.htm#289" z="        end else begin" k="25062_1$025050" h="40158" c="g"/>
+  </table>
+  </div><div><a name="cvg25063"/><hr/><table>
+  <tr l="306" lnk="__HDL_srcfile_18.htm#306" z="        if (RST) begin" c="Y" p="62.50"/><tr/>
+  <tr cr="c" t="I" l="306" lnk="__HDL_srcfile_18.htm#306" z="        if (RST) begin" k="25063_0$025050" h="268" c="g"/>
+  <tr cr="m" t="T" l="312" lnk="__HDL_srcfile_18.htm#312" z="            if (r_FSM_CH0) begin" h="0" c="r"/>
+  <tr cr="c" t="T" l="317" lnk="__HDL_srcfile_18.htm#317" z="            end else if (r_FSM_CH1) begin" k="25063_2$025050" h="900" c="g"/>
+  <tr cr="c" t="T" l="322" lnk="__HDL_srcfile_18.htm#322" z="            end else if (r_FSM_CH2) begin" k="25063_3$025050" h="1400" c="g"/>
+  <tr cr="c" t="T" l="327" lnk="__HDL_srcfile_18.htm#327" z="            end else if (r_FSM_CH3) begin" k="25063_4$025050" h="1400" c="g"/>
+  <tr cr="m" t="T" l="332" lnk="__HDL_srcfile_18.htm#332" z="            end else if (r_FSM_CH4) begin" h="0" c="r"/>
+  <tr cr="m" t="T" l="337" lnk="__HDL_srcfile_18.htm#337" z="            end else if (r_FSM_CH5) begin" h="0" c="r"/>
+  <tr cr="c" t="E" l="342" lnk="__HDL_srcfile_18.htm#342" z="            end else begin" k="25063_7$025050" h="36458" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

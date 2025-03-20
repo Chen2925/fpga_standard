@@ -1,0 +1,2 @@
+sram_i64o64_d256.v,verilog,xil_defaultlib,../../../../../../rtl/00_xilinx_ip/0_sbram/sram_i64o64_d256/sim/sram_i64o64_d256.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

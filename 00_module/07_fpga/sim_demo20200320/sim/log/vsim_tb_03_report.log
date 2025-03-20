@@ -1,0 +1,22 @@
+# vsim -novopt -t 1ps -c -l ./log/vsim_tb_03_report.log work.tb_top -L UNISIMS_VER -L SECUREIP -L SIMPRIMS_VER -L XILINXCORELIB_VER -L work work.glbl -wav ./wave/tb_03.wlf 
+# Start time: 10:49:05 on Aug 13,2024
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./do/tb_03.do PAUSED at line 6
+do do/tb_03.do
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:50:11 on Aug 13,2024
+# vlog -reportprogress 300 "+define+tb_03=1" -work work sim_model\define\define.v 
+# End time: 10:50:11 on Aug 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:50:11 on Aug 13,2024
+# vlog -reportprogress 300 "+define+tb_03=1" -work work "+incdir+{sim_modeldefine}" sim_model\tb_top.v 
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 10:50:11 on Aug 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

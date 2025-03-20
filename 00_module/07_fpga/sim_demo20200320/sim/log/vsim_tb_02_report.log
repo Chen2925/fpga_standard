@@ -1,0 +1,142 @@
+# vsim -L UNISIMS_VER -L SECUREIP -L SIMPRIMS_VER -L XILINXCORELIB_VER -L work -l ./log/vsim_tb_02_report.log -c -t 1ps -wav ./wave/tb_02.wlf -novopt work.tb_top work.glbl 
+# Refreshing D:/14_modelsim/07_fpga/sim_demo20200319/sim/work.tb_top
+# Loading work.tb_top
+# Loading work.SIM_MODEL
+# Loading work.FPGA_TOP_SIM
+# Loading work.LBUS_TOP
+# Loading work.LBUS_IF
+# Loading work.REG_IF
+# Loading work.COM_REG
+# Loading work.BRAM_IF
+# Loading work.DRAM_RD_IF
+# Loading work.sbram_i32o32_d1024
+# Loading XILINXCORELIB_VER.BLK_MEM_GEN_V7_3
+# Loading work.DRAM_WR_IF
+# Loading work.FPGA_TOP_SIMA
+# Loading work.REG_BIST
+# Loading work.BRAM_BIST
+# Loading work.sbram_i32o32_d64k
+# Loading work.DRAM_BIST
+# Loading work.glbl
+# Loading UNISIMS_VER.IOBUF
+# Loading XILINXCORELIB_VER.BLK_MEM_GEN_V7_3_mem_module
+# Loading XILINXCORELIB_VER.BLK_MEM_GEN_V7_3_output_stage
+# Loading XILINXCORELIB_VER.BLK_MEM_GEN_V7_3_softecc_output_reg_stage
+#  
+# ******<<<<<<<<<<<<<<<<<<<<<<Simulation tb_02 start>>>>>>>>>>>>>>>>>>>>>>> ******
+#  
+# ---- Initial simulation
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U01_LBUS_TOP.U04_DRAM_RD_IF.U_DBUF.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U01_LBUS_TOP.U05_DRAM_WR_IF.U_DBUF.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST0.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST1.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST2.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST3.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST4.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST5.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST6.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.U_BRAM_BIST7.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.DRAM_BIST0.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.DRAM_BIST1.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.DRAM_BIST2.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.DRAM_BIST3.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.DRAM_BIST4.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.DRAM_BIST5.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIM.U_FPGA_TOP_SIMA.DRAM_BIST6.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST0.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST1.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST2.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST3.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST4.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST5.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST6.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.U_BRAM_BIST7.U_BIST_BRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.DRAM_BIST0.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.DRAM_BIST1.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.DRAM_BIST2.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.DRAM_BIST3.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.DRAM_BIST4.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.DRAM_BIST5.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module tb_top.U_FPGA_TOP_SIMA.DRAM_BIST6.U_BIST_DRAM.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# ---- clock ---- 1111 ---- enable
+# ---- Wait for  64 cycles
+# ---- Wait for  64 cycles end
+# ---- Wait for  64 cycles
+# ---- Wait for  64 cycles end
+# ---- BRAM write   PORT :0x01    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x02    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x04    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x08    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x10    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x20    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x40    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x80    ADD :0x0000    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM read   PORT :0x01    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x01    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x02    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x02    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x04    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x04    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x08    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x08    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x10    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x10    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x20    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x20    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x40    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x40    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x80    ADD :0x0000    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x80    ADD :0x0000    SIZE :0x100    success read end
+# ---- BRAM write   PORT :0x01    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x02    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x04    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x08    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x10    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x20    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x40    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM write   PORT :0x80    ADD :0x0040    SIZE :0x100
+# ---- BRAM write end
+# ---- BRAM read   PORT :0x01    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x01    ADD :0x0040    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x02    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x02    ADD :0x0040    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x04    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x04    ADD :0x0040    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x08    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x08    ADD :0x0040    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x10    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x10    ADD :0x0040    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x20    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x20    ADD :0x0040    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x40    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x40    ADD :0x0040    SIZE :0x100    success read end
+# ---- BRAM read   PORT :0x80    ADD :0x0040    SIZE :0x100
+# ---- [Success  ]BRAM PORT :0x80    ADD :0x0040    SIZE :0x100    success read end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- tb_02 test completed !
+#  
+# ******<<<<<<<<<<<<<<<<<<<<Simulation tb_02 Successful End>>>>>>>>>>>>>>>>>>> ******
+#  
+do do/tb_01.do
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top

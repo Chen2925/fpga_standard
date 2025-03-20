@@ -1,0 +1,73 @@
+# vsim -t 1ps -c -l ./log/vsim_tb_00_report.log work.tb_top -L UNISIMS_VER -L SECUREIP -L SIMPRIMS_VER -L work -voptargs="+acc" work.glbl -wav ./wave/tb_00.wlf 
+# Start time: 21:38:58 on Mar 19,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "I2C_SLAVE1_IF(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "I2C_SLAVE0_IF(fast)".
+# Loading work.tb_top(fast)
+# Loading work.SIM_MODEL(fast)
+# Loading work.PC_SIM(fast)
+# Loading work.I2C_TOP_SIM(fast)
+# Loading work.I2C_MASTER_IF(fast)
+# Loading work.I2C_SLAVE0_IF(fast)
+# Loading work.I2C_SLAVE1_IF(fast)
+# Loading work.REG_IF(fast)
+# Loading work.REG_BIST(fast)
+# Loading work.glbl(fast)
+#  
+# ******<<<<<<<<<<<<<<<<<<<<<<Simulation tb_00 start>>>>>>>>>>>>>>>>>>>>>>> ******
+#  
+# ---- Initial simulation
+# ---- clock ---- 1111 ---- enable
+# ---- Wait for  64 cycles
+# ---- Wait for  64 cycles end
+# ---- Wait for  16 cycles
+# ---- Wait for  16 cycles end
+# ---- reseting by cycle
+# ---- reset0   64 cycle end
+# ---- Wait for  16 cycles
+# ---- Wait for  16 cycles end
+# ---- reseting by ns
+# ---- reset1  255 ns end
+# ---- [Error      ]Read register timeout ADD :0x200
+# ---- [Error      ]Read register timeout ADD :0x200
+# ---- [Error      ]Read register   PORT :0x0    ADD :0x200    EDAT :0x00000000    RDAT :0x00000000
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- tb_00 test completed !
+#  
+# ******<<<<<<<<<<<<<<<<<<<<<<Simulation tb_00 Fail End>>>>>>>>>>>>>>>>>>>>>>> ******
+#  
+# End time: 21:53:09 on Mar 19,2025, Elapsed time: 0:14:11
+# Errors: 0, Warnings: 0

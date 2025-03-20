@@ -1,0 +1,82 @@
+ 
+-- ======================================================================
+--                     Simulation tb_05 start                               
+-- ======================================================================
+---- Initial simulation
+// ================================================================
+// File Name    : log.txt                                          
+// Test Pattern : tb_05                                     
+// ================================================================
+---- clock ---- 1111 ---- enable
+---- Wait for  64 cycles end
+---- Wait for  64 cycles end
+---- LBUS BRAM write   ADD :0x00010000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00020000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00040000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00080000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00100000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00200000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00400000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00800000    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM read   ADD :0x00010000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00010000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00020000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00020000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00040000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00040000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00080000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00080000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00100000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00100000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00200000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00200000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00400000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00400000    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00800000    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00800000    SIZE :0x100 success read end
+---- LBUS BRAM write   ADD :0x00010040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00020040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00040040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00080040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00100040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00200040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00400040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM write   ADD :0x00800040    SIZE :0x100
+---- LBUS BRAM write end
+---- LBUS BRAM read   ADD :0x00010040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00010040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00020040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00020040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00040040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00040040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00080040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00080040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00100040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00100040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00200040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00200040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00400040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00400040    SIZE :0x100 success read end
+---- LBUS BRAM read   ADD :0x00800040    SIZE :0x100
+---- [Success  ]LBUS BRAM   ADD :0x00800040    SIZE :0x100 success read end
+---- Wait for 255 cycles end
+---- tb_05 test completed !
+ 
+-- ======================================================================
+--                    Simulation tb_05 Successful End                       
+-- ======================================================================

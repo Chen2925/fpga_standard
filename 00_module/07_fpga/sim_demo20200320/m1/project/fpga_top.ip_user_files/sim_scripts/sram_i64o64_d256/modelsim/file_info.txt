@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_VCOMP.vhd,
+blk_mem_gen_v8_4.v,verilog,blk_mem_gen_v8_4_4,../../../ipstatic/simulation/blk_mem_gen_v8_4.v,
+sram_i64o64_d256.v,verilog,xil_defaultlib,../../../../../../rtl/00_xilinx_ip/0_sbram/sram_i64o64_d256/sim/sram_i64o64_d256.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
