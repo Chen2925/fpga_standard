@@ -1,0 +1,77 @@
+# vsim -t 1ps -c -l ./log/vsim_tb_00_report.log work.tb_top -L UNISIMS_VER -L SECUREIP -L SIMPRIMS_VER -L work -voptargs="+acc" work.glbl -wav ./wave/tb_00.wlf 
+# Start time: 21:12:37 on Apr 14,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "SPI_MASTER(fast)".
+# Loading work.tb_top(fast)
+# Loading work.SIM_MODEL(fast)
+# Loading work.PC_SIM(fast)
+# Loading work.SPI_SIM(fast)
+# Loading work.SPI_MASTER(fast)
+# Loading work.SPI_SLAVE(fast)
+# Loading work.REG_BIST(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'SPI_RD_DATA'. The port definition is at: ../rtl/05_pc_sim/pc_sim.v(35).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/U_PC_SIM File: sim_model/tb_top.v Line: 733
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: ./wave/tb_00.wlf
+#           File in use by: Chen.zy  Hostname: DESKTOP-1419LA5  ProcessID: 21668
+#           Attempting to use alternate WLF file "./wave/wlftbe0s03".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: ./wave/tb_00.wlf
+#           Using alternate file: ./wave/wlftbe0s03
+#  
+# ******<<<<<<<<<<<<<<<<<<<<<<Simulation tb_00 start>>>>>>>>>>>>>>>>>>>>>>> ******
+#  
+# ---- Initial simulation
+# ---- clock ---- 1111 ---- enable
+# ---- Wait for  64 cycles
+# ---- Wait for  64 cycles end
+# ---- Wait for  16 cycles
+# ---- Wait for  16 cycles end
+# ---- reseting by cycle
+# ---- reset0   64 cycle end
+# ---- Wait for  16 cycles
+# ---- Wait for  16 cycles end
+# ---- reseting by ns
+# ---- reset1  255 ns end
+# ---- [Error      ]Read register timeout ADD :0x001
+# ---- [Error      ]Read register timeout ADD :0x001
+# ---- [Error      ]Read register   PORT :0x0    ADD :0x001    EDAT :0x00000000    RDAT :0xzzzz0000
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- Wait for 255 cycles
+# ---- Wait for 255 cycles end
+# ---- tb_00 test completed !
+#  
+# ******<<<<<<<<<<<<<<<<<<<<<<Simulation tb_00 Fail End>>>>>>>>>>>>>>>>>>>>>>> ******
+#  
+# End time: 21:12:47 on Apr 14,2025, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 3

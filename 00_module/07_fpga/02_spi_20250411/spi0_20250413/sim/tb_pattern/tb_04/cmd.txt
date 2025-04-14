@@ -1,0 +1,342 @@
+// ===============================================================================================================================
+//  command format
+//  [1:8]        [9:16]       [17:32]     [33:64]      [65:96]      [97:128]     [129:160]
+//  command      variable1    variable2   variable3    variable4    variable5    variable6
+//  xx           xx           xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx
+//  8bt          8bit         16bit       32bit        32bit        32bit        32bit
+
+// -------------------------------------------------------------------------------------------------------------------------------
+//  Reset & Clock & Switch
+//  00           times        xrst_sel    xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- reset by clock cycle     -- times[15:0]  xrst_sel[3:0]
+//  01           times        xrst_sel    xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- reset by ns              -- times[15:0]  xrst_sel[3:0]
+//  02           times        xrst_sel    xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- reset by us              -- times[15:0]  xrst_sel[3:0]
+//  03           times        xrst_sel    xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- reset by ms              -- times[15:0]  xrst_sel[3:0]
+//  04           clk_en       xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- clock enable(high active)-- clk_en[3:0]
+//  05           psh_sw       xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- pushswitch               -- psh_sw[7:0]
+//  06           dip_sw       xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- dipswitch                -- dip_sw[7:0]
+
+// -------------------------------------------------------------------------------------------------------------------------------
+//  Wait
+//  10           times        xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- wait with clock cycle    -- times[15:0]
+//  11           times        xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- wait with ns             -- times[15:0]
+//  12           times        xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- wait with us             -- times[15:0]
+//  13           times        xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- wait with ms             -- times[15:0]
+
+// -------------------------------------------------------------------------------------------------------------------------------
+//  Reg & ram & sdr
+//  20           ch_sel       xxxx        xxxxxxxx     xxxxxxxx     address      wr_data    -- register write           -- ch_sel[2:0]                  address[9:0]   wr_data[31:0]
+//  21           ch_sel       xxxx        xxxxxxxx     xxxxxxxx     address      rd_data    -- register read            -- ch_sel[2:0]                  address[9:0]   rd_data[31:0]
+//  22           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- bram write               -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+//  23           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- bram read                -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+//  24           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- sdram write              -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+//  25           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- sdram read               -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+
+// -------------------------------------------------------------------------------------------------------------------------------
+//  Local bus Reg & bram & sdram
+//  30           ch_sel       xxxx        xxxxxxxx     xxxxxxxx     address      wr_data    -- loack bus register write -- ch_sel[2:0]                  address[9:0]   wr_data[31:0]
+//  31           ch_sel       xxxx        xxxxxxxx     xxxxxxxx     address      rd_data    -- loack bus register read  -- ch_sel[2:0]                  address[9:0]   rd_data[31:0]
+//  32           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- loack bus bram write     -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+//  33           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- loack bus bram read      -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+//  34           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- loack bus sdram write    -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+//  35           ch_sel       line_num    xxxxxxxx     xxxxxxxx     address      size       -- loack bus sdram read     -- ch_sel[7:0]  line_num[15:0]  address[15:0]  size[11:0]
+
+// -------------------------------------------------------------------------------------------------------------------------------
+//  Trig
+//  40           xx           tirg_tx     xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx    -- trig tx                 -- trig_tx[7:0]
+//  41           timeout      tirg_rx     xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx    -- trig rx                 -- trig_rx[7:0]     timeout[7:0]
+
+// -------------------------------------------------------------------------------------------------------------------------------
+//  Backplane
+//  50           xx           soft_start  xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx    -- Softwart start          -- soft_start[0]
+//  51           xx           toal_start  xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx    -- Total start             -- toal_start[0]
+//  52           xx           fail_o      xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx    -- Fail output generate    -- fail_o[0]
+//  53           timeout      fail_i      xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx    -- Fail input check        -- fail_i[0]        timeout[7:0]
+//  54           timeout      trig_i      xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx    -- Trig input check        -- trig_i[0]        timeout[7:0]
+
+// -------------------------------------------------------------------------------------------------------------------------------
+//  End
+//  FF           xx           xxxx        xxxxxxxx     xxxxxxxx     xxxxxxxx     xxxxxxxx   -- sim end
+
+// ===============================================================================================================================
+
+//============================================
+//Clock enable
+//============================================
+04_0F_0000_00000000_00000000_00000000_00000000     // clock enable [3:0]
+10_40_0000_00000000_00000000_00000000_00000000     // Wait Time 64 clk
+
+//============================================
+//Reset
+//============================================
+10_40_0000_00000000_00000000_00000000_00000000     // Wait Time 64 clk
+
+//============================================
+//Register Read
+//============================================
+10_40_0000_00000000_00000000_00000000_00000000     // Wait Time 64 clk
+
+31_00_0000_00000000_00000000_00000000_01234567     // lbus register read
+31_00_0000_00000000_00000000_00000001_89ABCDEF     // lbus register read
+31_00_0000_00000000_00000000_00000002_5A5A5A5A     // lbus register read
+31_00_0000_00000000_00000000_00000003_A5A5A5A5     // lbus register read
+31_00_0000_00000000_00000000_00000004_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000005_FFFFFFFF     // lbus register read
+
+31_02_0000_00000000_00000000_00000000_01234567     // lbus register read
+31_02_0000_00000000_00000000_00000001_89ABCDEF     // lbus register read
+31_02_0000_00000000_00000000_00000002_5A5A5A5A     // lbus register read
+31_02_0000_00000000_00000000_00000003_A5A5A5A5     // lbus register read
+31_02_0000_00000000_00000000_00000004_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000005_FFFFFFFF     // lbus register read
+
+31_03_0000_00000000_00000000_00000000_01234567     // lbus register read
+31_03_0000_00000000_00000000_00000001_89ABCDEF     // lbus register read
+31_03_0000_00000000_00000000_00000002_5A5A5A5A     // lbus register read
+31_03_0000_00000000_00000000_00000003_A5A5A5A5     // lbus register read
+31_03_0000_00000000_00000000_00000004_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000005_FFFFFFFF     // lbus register read
+
+31_04_0000_00000000_00000000_00000000_01234567     // lbus register read
+31_04_0000_00000000_00000000_00000001_89ABCDEF     // lbus register read
+31_04_0000_00000000_00000000_00000002_5A5A5A5A     // lbus register read
+31_04_0000_00000000_00000000_00000003_A5A5A5A5     // lbus register read
+31_04_0000_00000000_00000000_00000004_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000005_FFFFFFFF     // lbus register read
+
+31_05_0000_00000000_00000000_00000000_01234567     // lbus register read
+31_05_0000_00000000_00000000_00000001_89ABCDEF     // lbus register read
+31_05_0000_00000000_00000000_00000002_5A5A5A5A     // lbus register read
+31_05_0000_00000000_00000000_00000003_A5A5A5A5     // lbus register read
+31_05_0000_00000000_00000000_00000004_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000005_FFFFFFFF     // lbus register read
+
+31_06_0000_00000000_00000000_00000000_01234567     // lbus register read
+31_06_0000_00000000_00000000_00000001_89ABCDEF     // lbus register read
+31_06_0000_00000000_00000000_00000002_5A5A5A5A     // lbus register read
+31_06_0000_00000000_00000000_00000003_A5A5A5A5     // lbus register read
+31_06_0000_00000000_00000000_00000004_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000005_FFFFFFFF     // lbus register read
+
+31_07_0000_00000000_00000000_00000000_01234567     // lbus register read
+31_07_0000_00000000_00000000_00000001_89ABCDEF     // lbus register read
+31_07_0000_00000000_00000000_00000002_5A5A5A5A     // lbus register read
+31_07_0000_00000000_00000000_00000003_A5A5A5A5     // lbus register read
+31_07_0000_00000000_00000000_00000004_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000005_FFFFFFFF     // lbus register read
+
+10_40_0000_00000000_00000000_00000000_00000000     // Wait Time 64 clk
+
+//============================================
+//Register Read
+//============================================
+10_40_0000_00000000_00000000_00000000_00000000     // Wait Time 64 clk
+
+31_00_0000_00000000_00000000_00000020_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000021_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000022_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000023_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000024_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000025_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000027_00000000     // lbus register read
+
+31_02_0000_00000000_00000000_00000020_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000021_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000022_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000023_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000024_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000025_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000027_00000000     // lbus register read
+
+31_03_0000_00000000_00000000_00000020_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000021_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000022_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000023_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000024_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000025_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000027_00000000     // lbus register read
+
+31_04_0000_00000000_00000000_00000020_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000021_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000022_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000023_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000024_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000025_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000027_00000000     // lbus register read
+
+31_05_0000_00000000_00000000_00000020_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000021_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000022_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000023_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000024_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000025_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000027_00000000     // lbus register read
+
+31_06_0000_00000000_00000000_00000020_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000021_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000022_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000023_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000024_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000025_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000027_00000000     // lbus register read
+
+31_07_0000_00000000_00000000_00000020_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000021_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000022_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000023_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000024_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000025_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000027_00000000     // lbus register read
+
+10_40_0000_00000000_00000000_00000000_00000000     // Wait Time 64 clk
+
+
+//============================================
+//Register Write
+//============================================
+
+30_00_0000_00000000_00000000_00000020_01234567     // lbus register write
+30_00_0000_00000000_00000000_00000021_76543210     // lbus register write
+30_00_0000_00000000_00000000_00000022_89ABCDEF     // lbus register write
+30_00_0000_00000000_00000000_00000023_FEDCBA98     // lbus register write
+30_00_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register write
+30_00_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register write
+30_00_0000_00000000_00000000_00000026_00000000     // lbus register write
+30_00_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register write
+
+30_02_0000_00000000_00000000_00000020_01234567     // lbus register write
+30_02_0000_00000000_00000000_00000021_76543210     // lbus register write
+30_02_0000_00000000_00000000_00000022_89ABCDEF     // lbus register write
+30_02_0000_00000000_00000000_00000023_FEDCBA98     // lbus register write
+30_02_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register write
+30_02_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register write
+30_02_0000_00000000_00000000_00000026_00000000     // lbus register write
+30_02_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register write
+
+30_03_0000_00000000_00000000_00000020_01234567     // lbus register write
+30_03_0000_00000000_00000000_00000021_76543210     // lbus register write
+30_03_0000_00000000_00000000_00000022_89ABCDEF     // lbus register write
+30_03_0000_00000000_00000000_00000023_FEDCBA98     // lbus register write
+30_03_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register write
+30_03_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register write
+30_03_0000_00000000_00000000_00000026_00000000     // lbus register write
+30_03_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register write
+
+30_04_0000_00000000_00000000_00000020_01234567     // lbus register write
+30_04_0000_00000000_00000000_00000021_76543210     // lbus register write
+30_04_0000_00000000_00000000_00000022_89ABCDEF     // lbus register write
+30_04_0000_00000000_00000000_00000023_FEDCBA98     // lbus register write
+30_04_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register write
+30_04_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register write
+30_04_0000_00000000_00000000_00000026_00000000     // lbus register write
+30_04_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register write
+
+30_05_0000_00000000_00000000_00000020_01234567     // lbus register write
+30_05_0000_00000000_00000000_00000021_76543210     // lbus register write
+30_05_0000_00000000_00000000_00000022_89ABCDEF     // lbus register write
+30_05_0000_00000000_00000000_00000023_FEDCBA98     // lbus register write
+30_05_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register write
+30_05_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register write
+30_05_0000_00000000_00000000_00000026_00000000     // lbus register write
+30_05_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register write
+
+30_06_0000_00000000_00000000_00000020_01234567     // lbus register write
+30_06_0000_00000000_00000000_00000021_76543210     // lbus register write
+30_06_0000_00000000_00000000_00000022_89ABCDEF     // lbus register write
+30_06_0000_00000000_00000000_00000023_FEDCBA98     // lbus register write
+30_06_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register write
+30_06_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register write
+30_06_0000_00000000_00000000_00000026_00000000     // lbus register write
+30_06_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register write
+
+30_07_0000_00000000_00000000_00000020_01234567     // lbus register write
+30_07_0000_00000000_00000000_00000021_76543210     // lbus register write
+30_07_0000_00000000_00000000_00000022_89ABCDEF     // lbus register write
+30_07_0000_00000000_00000000_00000023_FEDCBA98     // lbus register write
+30_07_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register write
+30_07_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register write
+30_07_0000_00000000_00000000_00000026_00000000     // lbus register write
+30_07_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register write
+
+10_40_0000_00000000_00000000_00000000_00000000     // Wait Time 64 clk
+
+//============================================
+//Register Read
+//============================================
+
+31_00_0000_00000000_00000000_00000020_01234567     // lbus register read
+31_00_0000_00000000_00000000_00000021_76543210     // lbus register read
+31_00_0000_00000000_00000000_00000022_89ABCDEF     // lbus register read
+31_00_0000_00000000_00000000_00000023_FEDCBA98     // lbus register read
+31_00_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register read
+31_00_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register read
+31_00_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_00_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register read
+
+31_02_0000_00000000_00000000_00000020_01234567     // lbus register read
+31_02_0000_00000000_00000000_00000021_76543210     // lbus register read
+31_02_0000_00000000_00000000_00000022_89ABCDEF     // lbus register read
+31_02_0000_00000000_00000000_00000023_FEDCBA98     // lbus register read
+31_02_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register read
+31_02_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register read
+31_02_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_02_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register read
+
+31_03_0000_00000000_00000000_00000020_01234567     // lbus register read
+31_03_0000_00000000_00000000_00000021_76543210     // lbus register read
+31_03_0000_00000000_00000000_00000022_89ABCDEF     // lbus register read
+31_03_0000_00000000_00000000_00000023_FEDCBA98     // lbus register read
+31_03_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register read
+31_03_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register read
+31_03_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_03_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register read
+
+31_04_0000_00000000_00000000_00000020_01234567     // lbus register read
+31_04_0000_00000000_00000000_00000021_76543210     // lbus register read
+31_04_0000_00000000_00000000_00000022_89ABCDEF     // lbus register read
+31_04_0000_00000000_00000000_00000023_FEDCBA98     // lbus register read
+31_04_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register read
+31_04_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register read
+31_04_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_04_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register read
+
+31_05_0000_00000000_00000000_00000020_01234567     // lbus register read
+31_05_0000_00000000_00000000_00000021_76543210     // lbus register read
+31_05_0000_00000000_00000000_00000022_89ABCDEF     // lbus register read
+31_05_0000_00000000_00000000_00000023_FEDCBA98     // lbus register read
+31_05_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register read
+31_05_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register read
+31_05_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_05_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register read
+
+31_06_0000_00000000_00000000_00000020_01234567     // lbus register read
+31_06_0000_00000000_00000000_00000021_76543210     // lbus register read
+31_06_0000_00000000_00000000_00000022_89ABCDEF     // lbus register read
+31_06_0000_00000000_00000000_00000023_FEDCBA98     // lbus register read
+31_06_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register read
+31_06_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register read
+31_06_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_06_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register read
+
+31_07_0000_00000000_00000000_00000020_01234567     // lbus register read
+31_07_0000_00000000_00000000_00000021_76543210     // lbus register read
+31_07_0000_00000000_00000000_00000022_89ABCDEF     // lbus register read
+31_07_0000_00000000_00000000_00000023_FEDCBA98     // lbus register read
+31_07_0000_00000000_00000000_00000024_5A5A5A5A     // lbus register read
+31_07_0000_00000000_00000000_00000025_A5A5A5A5     // lbus register read
+31_07_0000_00000000_00000000_00000026_00000000     // lbus register read
+31_07_0000_00000000_00000000_00000027_FFFFFFFF     // lbus register read
+
+//============================================
+//  Simulation End
+//============================================
+10_FF_0000_00000000_00000000_00000000_00000000     // Wait Time 256clk
+FF_00_0000_00000000_00000000_00000000_00000000     // sim-end
+
+
